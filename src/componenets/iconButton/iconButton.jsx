@@ -1,39 +1,18 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom'
 import './iconButton.css';
 
-// class IconButton extends Component{
-//     constructor(){
-//         super()
-
-//     this.state={
-//         icon:'',
-//         title:''
-//     }    
-    
-
-//     }
-
-//     render(){
-//         return(
-//             <div>
-//             <button>
-//             <img className='img1' src={img2} alt="img"/>
-//             </button>
-            
-//             <p>say hello to my little friend</p>
-//             </div>
-//         )
-//     }
-// }
 
 
 const IconButton =({title,icon})=>{
     return(
         <div>
+            <Link to='/infoPage'>
+            
             <button>
             {icon}
             </button>
+            </Link>
             
             <div className='name'>{title}</div>
         </div>
