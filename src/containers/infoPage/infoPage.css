@@ -1,3 +1,11 @@
-.video {
-    height: 200px;
+.info {
+    padding: 0;
+}
+
+.topLayout {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0 30px;
 }

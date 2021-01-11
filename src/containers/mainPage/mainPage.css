@@ -4,3 +4,9 @@ h1 {
     color: rgba(52, 52, 236, 0.767);
     padding: 20px 0;
 }
+
+body {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
