@@ -1,5 +1,5 @@
 .img1 {
-    height: 20px;
+    height: 30px;
     color: rgb(156, 37, 37);
     display: block;
     margin-left: auto;
@@ -22,7 +22,7 @@
 
 .name {
     text-align: center;
-    color: blue;
+    color: #224CFF;
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 12px;

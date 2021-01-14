@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 
 const RemedyCompButton = () =>(
-    <Link to='/remedyComparison'>
+    <Link to='/remedyCompare'>
             
             <button className='compareButton'>
             <p>Remedy Compare</p>

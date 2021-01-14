@@ -11,8 +11,8 @@ const MainButtonGrid = () =>{
          
             return(
                 
-                AcuteList.map(({title,icon})=>(
-                    <IconButton title={title} icon={icon} /> 
+                AcuteList.map(({title,icon,id})=>(
+                    <IconButton title={title} icon={icon} id={id} /> 
                      
                 ))
             )

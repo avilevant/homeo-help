@@ -3,6 +3,7 @@ import './sideDrawer.css';
 import NavigationItems from '../navigationItems/navigationItems';
 import BackDrop from '../../UI/backdrop/backdrop';
 import DrawerToggle from '../sideDrawer/drawerToggle/drawerToggle';
+import SideLogo from '../../../images/Asset 4.png';
 
 const SideDrawer = (props) =>{
 
@@ -18,7 +19,7 @@ const SideDrawer = (props) =>{
         <BackDrop show={props.open} clicked={props.closed}/>
         <div className={controlSideDrawer.join(' ')}>
         <DrawerToggle clicked={props.DrawerToggleClicked} drawerOpen={props.open} />
-        <div>Logo</div>
+        <img src={SideLogo} alt='logo' className='SideLogo' />
         <nav>
         <NavigationItems/>
         </nav>

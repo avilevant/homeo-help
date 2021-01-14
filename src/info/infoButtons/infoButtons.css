@@ -4,6 +4,11 @@
     display: block; */
     width: 100%;
     border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding-bottom: 10px;
 }
 
 .infobutton:hover,
@@ -27,4 +32,9 @@
     /* position: relative;
     bottom: 0;
     left: 0; */
+}
+
+.infoImg {
+    height: 20px;
+    padding: 10px;
 }

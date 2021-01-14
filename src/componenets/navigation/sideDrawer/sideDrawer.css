@@ -25,3 +25,7 @@
 .close {
     transform: translateX(-100%);
 }
+
+.SideLogo {
+    height: 30px;
+}
