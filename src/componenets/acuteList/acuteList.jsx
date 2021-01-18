@@ -6,11 +6,11 @@ import img4 from '../../images/Asset 18.png';
 import img5 from '../../images/Asset 11.png';
 import img6 from '../../images/Asset 10.png';
 import img7 from '../../images/Asset 19.png';
-import img8 from '../../images/Path 113.png';
+import img8 from '../../images/Asset 23.png';
 import img9 from '../../images/Asset 15.png';
 import img10 from '../../images/Asset 16.png';
 import img11 from '../../images/Asset 13.png';
-import img12 from '../../images/Path 113.png';
+import img12 from '../../images/Asset 24.png';
 
 
 const AcuteList =[ 

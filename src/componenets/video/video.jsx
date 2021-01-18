@@ -10,7 +10,7 @@ const Video = (props)=>{
 
   return ( 
     <div>
-    <YouTube videoId="wI5fS0O6TrE" opts={opts} />
+    <YouTube videoId={props.videoId} opts={opts} />
     
     </div>)
 }

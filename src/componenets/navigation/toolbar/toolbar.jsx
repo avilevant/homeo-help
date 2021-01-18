@@ -6,11 +6,13 @@ import Logo from '../../../images/Asset 4.png';
 
 const ToolBar =(props)=>(
     <header className='toolbar'>
+    <img src={Logo} alt='logo' className='logo' />
         <DrawerToggle clicked={props.DrawerToggleClicked} />
-        <img src={Logo} alt='logo' className='logo' />
+        
         <nav className='DesktopOnly'>
            <NavigationItems/>
         </nav>
+        
     </header>
 );
 

@@ -3,13 +3,25 @@ import InfoSegment from '../infoSegment/infoSegment'
 import InfoButtons from '../infoButtons/infoButtons';
 import './infoSegments.css';
 
-const InfoSegments =()=>(
+const InfoSegments =(props)=>{
+
+    const  tabClicked1 = (x)=>{
+       
+        props.changeTab(x)
+        
+    }  
+
+return(
     <div className='infoarrange'>
-    <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sint amet beatae cumque quos natus, unde adipisci quasi iure nostrum quod eos. Recusandae reprehenderit repellat alias, nulla nostrum commodi quibusdam!</div>
-    
-    <InfoSegment/>
-    <InfoButtons/>
+    <div>
+    {props.basicInfo}
     </div>
-)
+    
+    <InfoSegment infoType={props.multiInfo} />
+    <InfoButtons changeTab1={tabClicked1}/>
+    </div>)
+}
+
+
 
 export default InfoSegments;

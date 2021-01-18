@@ -19,13 +19,9 @@
 }
 
 .open {
-    transform: translateX(0);
+    transform: translateX(50%);
 }
 
 .close {
-    transform: translateX(-100%);
-}
-
-.SideLogo {
-    height: 30px;
+    transform: translateX(200%);
 }
