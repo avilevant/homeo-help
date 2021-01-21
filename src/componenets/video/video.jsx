@@ -3,7 +3,7 @@ import YouTube from 'react-youtube';
 
 const Video = (props)=>{
     const opts = {
-        height: '200px',
+        height: '100%',
         width: '100%'
        
         }

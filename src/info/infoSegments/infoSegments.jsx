@@ -13,12 +13,12 @@ const InfoSegments =(props)=>{
 
 return(
     <div className='infoarrange'>
-    <div>
+    <div className='basicInfo'>
     {props.basicInfo}
     </div>
     
     <InfoSegment infoType={props.multiInfo} />
-    <InfoButtons changeTab1={tabClicked1}/>
+    <InfoButtons changeTab1={tabClicked1} firstTabState={props.firstTabState}/>
     </div>)
 }
 

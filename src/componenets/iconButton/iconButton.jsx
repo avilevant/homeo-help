@@ -9,6 +9,7 @@ const IconButton =({title,icon,id})=>{
 
     const showId=()=>{
        Cookies.set('buttonId',{id})
+       console.log(id)
     }
     
     

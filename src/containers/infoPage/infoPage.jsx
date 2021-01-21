@@ -7,7 +7,7 @@ import RemedyCompButton from '../../componenets/remedyCompButton/remedyCompButto
 import InfoSegments from '../../info/infoSegments/infoSegments';
 import InfoData from '../../info/infoData/infoData1';
 import Cookies from 'js-cookie';
-
+import AcuteList from '../../componenets/acuteList/acuteList';
 class InfoPage extends React.Component{
 
   
@@ -20,9 +20,12 @@ class InfoPage extends React.Component{
     
     this.state = {
       videoId:InfoData[n].video,
-      Icon:'',
+      name:InfoData[n].IconButton,
       basicInfo:InfoData[n].generalInfo,
-      multiInfo:InfoData[n].firstAid
+      multiInfo:InfoData[n].firstAid,
+      firstTabState:'active'
+      
+
 
     }
     
@@ -35,53 +38,61 @@ class InfoPage extends React.Component{
   
 
   changeTabInfo=(x)=>{
-    
+    let n = Cookies.getJSON('buttonId').id
+    n=n-1
       switch(x){
           case '1':
-          this.setState({multiInfo:InfoData[1].firstAid})
+          this.setState({multiInfo:InfoData[n].firstAid})
           break;
           case '2':
-          this.setState({multiInfo:InfoData[1].nutrition})
+          this.setState({multiInfo:InfoData[n].nutrition, firstTabState:''})
           break;
           case '3':
-          this.setState({multiInfo:InfoData[1].grandma})
+          this.setState({multiInfo:InfoData[n].grandma, firstTabState:''})
           break;
           case '4':
-          this.setState({multiInfo:InfoData[1].homeopathy})
+          this.setState({multiInfo:InfoData[n].homeopathy, firstTabState:''})
           break;
         default:
-          this.setState({multiInfo:InfoData[1].firstAid})
-      }
+          this.setState({multiInfo:InfoData[n].firstAid})
+      }    
     
     
-    
+  }
+
+  renderIcon(){
+    let n = Cookies.getJSON('buttonId').id
+    return AcuteList[n-1].icon
   }
 
   render(){
 
-    return ( <div className='info'>
-      
-    <Video videoId={this.state.videoId}/>
+    return ( 
+    
+    <div className='info'>
+    <div className='videoLayout'>
+    
+    <Video videoId={this.state.videoId} />
+    </div> 
     <div className='topLayout'>
+    <div className='return_button'>
+    
     <Link to='/'>
-    <button>go back</button>
+    <button className='infoPageReturn'><span>חזרה</span></button>
     </Link>
-    <IconButton/>
     </div>
-    <InfoSegments basicInfo={this.state.basicInfo} multiInfo={this.state.multiInfo} changeTab={this.changeTabInfo}/>
+    <div className='name1'>
+    {this.state.name}
+    </div>  
+    <IconButton icon={this.renderIcon()}/>
+    
+    </div>
+    <InfoSegments basicInfo={this.state.basicInfo} multiInfo={this.state.multiInfo} changeTab={this.changeTabInfo} firstTabState={this.state.firstTabState} />
     <RemedyCompButton />
-    </div>)
-  }
+    </div>
+    )}
 
 }
-
-// const InfoPage =(props)=>{
-   
-//   console.log('this is:'+props.id)
- 
- 
-// }
-
 
 
 export default InfoPage;

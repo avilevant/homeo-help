@@ -6,8 +6,8 @@ import Logo from '../../../images/Asset 4.png';
 
 const ToolBar =(props)=>(
     <header className='toolbar'>
+    <DrawerToggle clicked={props.DrawerToggleClicked} />
     <img src={Logo} alt='logo' className='logo' />
-        <DrawerToggle clicked={props.DrawerToggleClicked} />
         
         <nav className='DesktopOnly'>
            <NavigationItems/>

@@ -8,4 +8,11 @@
 
 .RemedyName {
     margin: 15px;
+    min-width: 30%;
+    text-align: center;
+}
+
+.RemedyInfo {
+    max-width: 60%;
+    margin-top: 10px;
 }

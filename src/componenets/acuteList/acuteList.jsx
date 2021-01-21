@@ -14,25 +14,25 @@ import img12 from '../../images/Asset 24.png';
 
 
 const AcuteList =[ 
-    
-        {
-            title:'פציעות וחבלות',
-            icon:<img className='img1' src={img1} alt="img"/>,
-            id:1
-        },
+    {
+        title:'שיעול וקשיי נשימה',
+        icon:<img className='img1' src={img3} alt="img"/>,
+        id:1
+    },
+        
         {
             title:'צינון ונזלת',
             icon:<img className='img1' src={img2} alt="img"/>,
             id:2
         },
         {
-            title:'שיעול וקשיי נשימה',
-            icon:<img className='img1' src={img3} alt="img"/>,
+            title:'פציעות וחבלות',
+            icon:<img className='img1' src={img1} alt="img"/>,
             id:3
         },
         {
-            title:'כוויות',
-            icon:<img className='img1' src={img4} alt="img"/>,
+            title:'דלקת בדרכי השתן',
+            icon:<img className='img1' src={img6} alt="img"/>,
             id:4
         },
         {
@@ -41,13 +41,13 @@ const AcuteList =[
             id:5
         },
         {
-            title:'דלקת בדרכי השתן',
-            icon:<img className='img1' src={img6} alt="img"/>,
+            title:'כוויות',
+            icon:<img className='img1' src={img4} alt="img"/>,
             id:6
         },
         {
-            title:'חתכים, דקירות וחדירת עצם זר',
-            icon:<img className='img1' src={img7} alt="img"/>,
+            title:'מכת חום והתייבשות',
+            icon:<img className='img1' src={img9} alt="img"/>,
             id:7
         },
         {
@@ -56,13 +56,13 @@ const AcuteList =[
             id:8
         },
         {
-            title:'מכת חום והתייבשות',
-            icon:<img className='img1' src={img9} alt="img"/>,
+            title:'חתכים, דקירות וחדירת עצם זר',
+            icon:<img className='img1' src={img7} alt="img"/>,
             id:9
         },
         {
-            title:'נקעים ומתיחות שרירים',
-            icon:<img className='img1' src={img10} alt="img"/>,
+            title:'חרדה וטראומה רגשית',
+            icon:<img className='img1' src={img12} alt="img"/>,
             id:10
         },
         {
@@ -71,10 +71,12 @@ const AcuteList =[
             id:11
         },
         {
-            title:'חרדה וטראומה רגשית',
-            icon:<img className='img1' src={img12} alt="img"/>,
+            title:'נקעים ומתיחות שרירים',
+            icon:<img className='img1' src={img10} alt="img"/>,
             id:12
         }
+        
+        
     ]
 
    

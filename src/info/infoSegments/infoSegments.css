@@ -3,5 +3,22 @@
     position: absolute;
     /* grid-template-rows: repeat(4, 1fr); */
     /* grid-template-columns: repeat(3, 1fr); */
-    bottom: 10%;
+    bottom: 5%;
+}
+
+.basicInfo {
+    padding: 20px;
+    height: 13vh;
+    overflow: auto;
+    margin: 15px 0;
+    background-color: white;
+}
+
+@media(max-width:360px) {
+    .basicInfo {
+        padding: 15px;
+        height: 11vh;
+        overflow: auto;
+        margin: 0;
+    }
 }

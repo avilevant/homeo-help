@@ -5,8 +5,8 @@ import './infoSegment.css';
 const InfoSegment =(props)=>{
 
     return(
-        <div >
-        <p className='structure'>
+        <div className='structure'>
+        <p className='inner-structure'>
         {props.infoType}
         </p>
         

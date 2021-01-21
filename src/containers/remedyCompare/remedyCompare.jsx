@@ -1,19 +1,20 @@
 import React from 'react';
 import './remedyCompare.css';
-import RemedyInfoButton from '../../componenets/remedyInfoButton/remedyInfoButton';
 import {Link} from 'react-router-dom';
 import RemedyInfoDisplay from '../../info/remedyInfoDisplay/remedyInfoDisplay';
-import InfoRemedy1 from '../../info/infoRemedy/infoRemedy';
+import AllRemedyInfo from '../../info/infoRemedy/infoRemedy';
+import Cookies from 'js-cookie';
 
 
 class RemedyCompare extends React.Component{
 
     constructor(){
         super()
-        let i=0
+        
         this.state={
-            displayedInformation:InfoRemedy1[0].physical,
-            // displayMarker:'1'
+            displayType: '1',
+            remedyIndex: 1,
+            tabOnRender:'clicked'
         }
 
         
@@ -21,137 +22,64 @@ class RemedyCompare extends React.Component{
     }
 
     
+    getInfoBySelector= (remedyData, selector) =>{
 
+        
+        switch (selector){
+            case "1": return remedyData.physical;
+            case "2": return remedyData.emotional;
+            case "3": return remedyData.unique;
+            default: return remedyData.physical;
+        }
+    }
     
 
     displayRemedyInfo=(x)=>{
-        // if(x==='2'){
-        //     console.log('2')
-        //     return(
-                
-        //         InfoRemedy1.map(({remedyName,physical,emotional,unique})=>(
-        //             <RemedyInfoDisplay  RemedyName={remedyName} Remedy_information={emotional} test={'two'} /> )) 
-        //     )
-        // }else if(x==='3'){
-        //     console.log('3')
-        //     return(
-        //         InfoRemedy1.map(({remedyName,physical,emotional,unique})=>(
-        //             <RemedyInfoDisplay  Remedy_information={unique}  test={'three'}/> )) 
-        //     )
-        // }else{
-        //     console.log('1')
-        //     return(
-        //         InfoRemedy1.map(({remedyName,physical,emotional,unique})=>(
-        //             <RemedyInfoDisplay   Remedy_information={physical} test={'one'} /> )) 
-        //     ) 
-        // }
 
+        let n = Cookies.getJSON('buttonId').id
+        n= n-1
+        // this.setState({remedyIndex:n})
 
-        // for(let i=0; i<InfoRemedy1.length; i++){
-        //     return(
-
-        //         <RemedyInfoDisplay  RemedyName={InfoRemedy1[i].remedyName} Remedy_information={this.state.displayedInformation}  />
-        //     )
+        //   let remedyInfo =AllRemedyInfo[this.state.remedyIndex];
+        let remedyInfo =AllRemedyInfo[n];
+   
            return(
-            InfoRemedy1.map(({remedyName,physical,emotional,unique})=>(
-                            <RemedyInfoDisplay  RemedyName={remedyName} Remedy_information={this.state.displayedInformation}  /> )) 
+
+            //let remedyInfo = InfoRemedyAll
+            // InfoRemedy1.map(({remedyName,physical,emotional,unique})=>(
+            //                 <RemedyInfoDisplay  RemedyName={remedyName} Remedy_information={this.state.displayedInformation}  /> )) 
+            remedyInfo.map((e) => (
+                <RemedyInfoDisplay  RemedyName={e.remedyName} 
+                Remedy_information={this.getInfoBySelector(e, this.state.displayType)}/>)             
+            )
+
+            
            ) 
         }
         
-        // switch(x){
-        //     case '1':
-        //         console.log('1')
-                
-        //             InfoRemedy1.map(({remedyName,physical,emotional,unique})=>(
-        //                 <RemedyInfoDisplay  RemedyName={remedyName} Remedy_information={physical}  /> ))       
-
-        //     break;
-        //     case '2':
-        //         console.log('2')
-                
-        //             InfoRemedy1.map(({remedyName,physical,emotional,unique})=>(
-        //                 <RemedyInfoDisplay  RemedyName={remedyName} Remedy_information={emotional}  /> ))    
-        //     // this.setState({displayedInformation:'emotional'})
-        //     // this.displayRemedyInfo()
-        //     break;
-        //     case '3':
-        //         console.log('3')
-        //         InfoRemedy1.map(({remedyName,physical,emotional,unique})=>(
-        //             <RemedyInfoDisplay  RemedyName={remedyName} Remedy_information={unique}  /> ))
-                
-        //     // this.setState({displayedInformation:'unique'})
-        //     // this.displayRemedyInfo()
-        //     break;
-        //     default:
-        //         InfoRemedy1.map(({remedyName,physical,emotional,unique})=>(
-        //             <RemedyInfoDisplay  RemedyName={remedyName} Remedy_information={physical}  /> ))
-        //     // this.setState({displayedInformation:'physical'})
-        //     // this.displayRemedyInfo()
-        // }
-
-        // console.log(InfoRemedy1.physical)
-        
-          
-                // return(
-                //         InfoRemedy1.map(({remedyName})=>(
-                //             <RemedyInfoDisplay  RemedyName={remedyName} Remedy_information={testing}  /> )))
+     
            
 
-            
+        tabFirstopen=()=>{
+          let firstOpen =''
+          if(this.state.tabOnRender==='clicked'){
+              firstOpen ='remedyFeatureButton active2'
+          }else{
+            firstOpen ='remedyFeatureButton'
+          }
+          return firstOpen
+        }    
         
 
-    // return(
-    //     InfoRemedy1.map(({remedyName,physical,emotional,unique})=>(
-    //         <RemedyInfoDisplay  RemedyName={remedyName} Remedy_information={emotional}  /> )))    
     
 
-    changeRemedyInfo=(x)=>{
-        console.log('clickedr')
-        let i=0
-        switch(x){
-            case '1':
-                console.log('1')
-
-            // while(i<InfoRemedy1.length){
-
-            //     this.setState({displayedInformation:InfoRemedy1[i].physical})
-            //     this.displayRemedyInfo()
-            //     i++
-            //     console.log(this.state.displayedInformation)
-            //     console.log(i)
-            // }
-
-                   
-
-               
-            // this.displayRemedyInfo()
-            break;
-            case '2':
-                console.log('2')
-            this.setState({displayedInformation:InfoRemedy1[1].emotional})
-            console.log(this.state.displayedInformation)
-            // this.displayRemedyInfo()
-            break;
-            case '3':
-                console.log('3')
-            this.setState({displayedInformation:InfoRemedy1[1].unique})
-            console.log(this.state.displayedInformation)
-            // this.displayRemedyInfo()
-            break;
-            default:
-            this.setState({displayedInformation:InfoRemedy1[1].physical})
-            console.log(this.state.displayedInformation)
-            // this.displayRemedyInfo()
-        }
+  
       
       
       
-    }
+    
 
-    // componentDidMount(){
-
-    //     this.setState({displayedInformation:InfoRemedy1.physical})
-    // }
+   
 
 
 render(){
@@ -161,9 +89,9 @@ render(){
         <div className='remedy_options'>
         
         <p className='remedy_name'>שם הרמדי</p>   
-        <button className='remedyFeatureButton' onClick={()=>this.changeRemedyInfo('1')} >מאפיינים פיזיים</button>
-        <button className='remedyFeatureButton' onClick={()=>this.changeRemedyInfo('2')} >מאפיינים רגשיים</button>
-        <button className='remedyFeatureButton' onClick={()=>this.changeRemedyInfo('3')} >מאפיינים יחודיים</button>
+        <button className={this.tabFirstopen()} onClick={()=>this.setState({displayType:'1'})} >מאפיינים פיזיים</button>
+        <button className='remedyFeatureButton' onClick={()=>this.setState({displayType:'2',tabOnRender:''})} >מאפיינים רגשיים</button>
+        <button className='remedyFeatureButton' onClick={()=>this.setState({displayType:'3',tabOnRender:''})} >מאפיינים יחודיים</button>
            
         
         
@@ -178,7 +106,7 @@ render(){
         <Link to='/infoPage'>
         
         <button className='returnButton'>
-        back
+        חזרה
         </button>
         </Link>
         
