@@ -7,7 +7,7 @@ const RemedyInfoDisplay = (props) =>(
     
 
     <div className='RemedyName'>
-    <h1>{props.RemedyName}</h1>
+    <h2>{props.RemedyName}</h2>
     <button className='orderButton'>הזמנה</button>
     </div>
     <div className='RemedyInfo' >

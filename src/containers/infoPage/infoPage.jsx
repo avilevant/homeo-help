@@ -20,7 +20,7 @@ class InfoPage extends React.Component{
     
     this.state = {
       videoId:InfoData[n].video,
-      name:InfoData[n].IconButton,
+      name:InfoData[n].name,
       basicInfo:InfoData[n].generalInfo,
       multiInfo:InfoData[n].firstAid,
       firstTabState:'active'
@@ -65,6 +65,11 @@ class InfoPage extends React.Component{
     return AcuteList[n-1].icon
   }
 
+  renderID(){
+    let idn=Cookies.getJSON('buttonId').id
+    return idn
+  }
+
   render(){
 
     return ( 
@@ -77,18 +82,22 @@ class InfoPage extends React.Component{
     <div className='topLayout'>
     <div className='return_button'>
     
-    <Link to='/'>
-    <button className='infoPageReturn'><span>חזרה</span></button>
-    </Link>
+    
     </div>
     <div className='name1'>
     {this.state.name}
-    </div>  
-    <IconButton icon={this.renderIcon()}/>
+    </div>
+    <IconButton icon={this.renderIcon()} id={this.renderID()}/>  
     
     </div>
-    <InfoSegments basicInfo={this.state.basicInfo} multiInfo={this.state.multiInfo} changeTab={this.changeTabInfo} firstTabState={this.state.firstTabState} />
+    <InfoSegments basicInfo={this.state.basicInfo} multiInfo={this.state.multiInfo}
+    changeTab={this.changeTabInfo} firstTabState={this.state.firstTabState} />
+    <div>
+    <Link to='/'>
+    <button className='infoPageReturn'><span>חזרה</span></button>
+    </Link>
     <RemedyCompButton />
+    </div> 
     </div>
     )}
 

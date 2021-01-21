@@ -5,7 +5,7 @@ import MainButtonGrid from '../../componenets/mainButtondGrid/mainButtondGrid';
 
 const MainPage = ()=>(
     <div>
-    <h1>עזרה ראשונה הומאופתיה ורפואה טבעית</h1>
+    <h1>עזרה ראשונה - הומאופתיה ורפואה טבעית</h1>
     <MainButtonGrid/>
     </div>
 )

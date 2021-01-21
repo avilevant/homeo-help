@@ -7,7 +7,7 @@ const RemedyCompButton = () =>(
     <Link to='/remedyCompare'>
             
             <button className='compareButton'>
-            <p>השוואת תרופות הומאופתיות</p>
+            <p className='compButtonText'>השוואת תרופות הומאופתיות</p>
             </button>
          </Link>
 );

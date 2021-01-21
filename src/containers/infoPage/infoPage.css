@@ -8,7 +8,7 @@
         display: flex;
         align-items: center;
         flex-flow: row;
-        justify-content: space-between;
+        justify-content: center;
         padding: 10px 20px;
         height: 10vh;
         z-index: 20;
@@ -20,14 +20,21 @@
     
     .name1 {
         color: #1D4AD8;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: bold;
         padding: 0 10px;
     }
     
     .infoPageReturn {
         border: none;
-        background-color: transparent;
+        background-color: green;
+        width: 30%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height: 50px;
+        color: white;
+        z-index: 50;
     }
     
     span::before {
@@ -39,8 +46,5 @@
     @media(max-width:360px) {
         .topLayout {
             height: 7vh;
-        }
-        .videoLayout {
-            /* margin-top: 40px; */
         }
     }
