@@ -17,8 +17,8 @@ return(
     {props.basicInfo}
     </div>
     
-    <InfoSegment infoType={props.multiInfo} />
-    <InfoButtons changeTab1={tabClicked1} firstTabState={props.firstTabState}/>
+    <InfoSegment infoType={props.multiInfo} tabToggleHandler={props.tabToggleHandler} />
+    <InfoButtons changeTab1={tabClicked1}  tabToggleHandler={props.tabToggleHandler}/>
     </div>)
 }
 

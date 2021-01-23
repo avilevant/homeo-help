@@ -4,6 +4,7 @@ import Layout from '../src/componenets/layout/layout';
 import MainPage from './containers/mainPage/mainPage';
 import InfoPage from './containers/infoPage/infoPage';
 import RemedyCompare from './containers/remedyCompare/remedyCompare';
+import RemedyOrder from './containers/remedyOrder/remedyOrder';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Route exact path='/' component ={MainPage}/>
     <Route path='/infoPage' component ={InfoPage}/>
     <Route path='/remedyCompare' component ={RemedyCompare}/>
+    <Route path='/RemedyOrder' component ={RemedyOrder}/>
     </Switch>
     </Layout>
     </div>

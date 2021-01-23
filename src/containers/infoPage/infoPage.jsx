@@ -22,8 +22,8 @@ class InfoPage extends React.Component{
       videoId:InfoData[n].video,
       name:InfoData[n].name,
       basicInfo:InfoData[n].generalInfo,
-      multiInfo:InfoData[n].firstAid,
-      firstTabState:'active'
+      multiInfo:'',
+      currentId:n
       
 
 
@@ -34,24 +34,38 @@ class InfoPage extends React.Component{
   }
   
 
+  tabToggleHandler =()=>{
+    this.setState((prevState)=>{
+      return{multiInfo:!prevState.multiInfo}
+    })
+  }
+
   
   
 
   changeTabInfo=(x)=>{
-    let n = Cookies.getJSON('buttonId').id
-    n=n-1
+    let n = this.state.currentId
+    
       switch(x){
           case '1':
+          this.state.multiInfo === InfoData[n].firstAid ?
+          this.tabToggleHandler() : 
           this.setState({multiInfo:InfoData[n].firstAid})
           break;
           case '2':
-          this.setState({multiInfo:InfoData[n].nutrition, firstTabState:''})
+          this.state.multiInfo === InfoData[n].nutrition ?
+          this.tabToggleHandler() :  
+          this.setState({multiInfo:InfoData[n].nutrition})
           break;
           case '3':
-          this.setState({multiInfo:InfoData[n].grandma, firstTabState:''})
+          this.state.multiInfo === InfoData[n].grandma ?
+          this.tabToggleHandler() :  
+          this.setState({multiInfo:InfoData[n].grandma})
           break;
           case '4':
-          this.setState({multiInfo:InfoData[n].homeopathy, firstTabState:''})
+          this.state.multiInfo === InfoData[n].homeopathy ?
+          this.tabToggleHandler() :
+          this.setState({multiInfo:InfoData[n].homeopathy})
           break;
         default:
           this.setState({multiInfo:InfoData[n].firstAid})
@@ -61,14 +75,11 @@ class InfoPage extends React.Component{
   }
 
   renderIcon(){
-    let n = Cookies.getJSON('buttonId').id
-    return AcuteList[n-1].icon
+    let m = this.state.currentId
+    return AcuteList[m].icon
   }
 
-  renderID(){
-    let idn=Cookies.getJSON('buttonId').id
-    return idn
-  }
+  
 
   render(){
 
@@ -80,18 +91,13 @@ class InfoPage extends React.Component{
     <Video videoId={this.state.videoId} />
     </div> 
     <div className='topLayout'>
-    <div className='return_button'>
-    
-    
-    </div>
     <div className='name1'>
     {this.state.name}
     </div>
-    <IconButton icon={this.renderIcon()} id={this.renderID()}/>  
-    
+    <IconButton icon={this.renderIcon()} id={this.state.currentId}/>  
     </div>
     <InfoSegments basicInfo={this.state.basicInfo} multiInfo={this.state.multiInfo}
-    changeTab={this.changeTabInfo} firstTabState={this.state.firstTabState} />
+    changeTab={this.changeTabInfo} tabToggleHandler={this.tabToggleHandler} />
     <div>
     <Link to='/'>
     <button className='infoPageReturn'><span>חזרה</span></button>

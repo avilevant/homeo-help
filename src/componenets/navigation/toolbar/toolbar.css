@@ -1,5 +1,6 @@
 .toolbar {
-    height: 56px;
+    /* height: 56px; */
+    height: 7vh;
     width: 100%;
     position: fixed;
     top: 0;
@@ -26,4 +27,13 @@
 
 .logo {
     height: 30px;
+}
+
+@media(max-width:360px) {
+    .logo {
+        height: 25px;
+    }
+    .toolbar {
+        height: 8vh;
+    }
 }

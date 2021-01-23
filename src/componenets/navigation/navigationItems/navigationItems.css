@@ -49,6 +49,7 @@
 .sideDrawerIcon {
     height: 25px;
     padding: 0 5px;
+    padding-left: 20px;
 }
 
 @media(max-width:360px) {

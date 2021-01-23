@@ -1,7 +1,7 @@
     .info {
         padding: 0;
         /* display: grid;
-    grid-template-rows: 25% 15% 25% 25% 10%; */
+        grid-template-rows: 25% 15% 25% 25% 10%; */
     }
     
     .topLayout {
@@ -9,20 +9,21 @@
         align-items: center;
         flex-flow: row;
         justify-content: center;
-        padding: 10px 20px;
-        height: 10vh;
+        /* padding: 10px 20px; */
+        height: 13vh;
         z-index: 20;
     }
     
     .videoLayout {
-        margin-top: 50px;
+        margin-top: 7vh;
     }
     
     .name1 {
         color: #1D4AD8;
         font-size: 18px;
         font-weight: bold;
-        padding: 0 10px;
+        padding: 0 20px;
+        margin-bottom: 20px;
     }
     
     .infoPageReturn {
@@ -32,19 +33,18 @@
         position: fixed;
         bottom: 0;
         right: 0;
-        height: 50px;
+        height: 7vh;
         color: white;
         z-index: 50;
     }
-    
-    span::before {
+    /* span::before {
         content: '→';
         font-size: 18px;
         margin-left: 5px;
-    }
+    } */
     
     @media(max-width:360px) {
         .topLayout {
-            height: 7vh;
+            height: 10vh;
         }
     }

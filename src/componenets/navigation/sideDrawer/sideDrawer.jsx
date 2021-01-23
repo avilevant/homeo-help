@@ -11,7 +11,7 @@ const SideDrawer = (props) =>{
         controlSideDrawer = ['sideDrawer', 'open']
     }
 
-    // {controlSideDrawer.join(' ')}
+
 
     return(
         <div>

@@ -12,21 +12,10 @@ const  tabClicked = (x)=>{
    
 }   
 
-const classInfo=()=>{
-    let firstOpen=''
-    if(props.firstTabState==='active'){
 
-         firstOpen ='infobutton active'
-    }else{
-         firstOpen ='infobutton'
-    }
- return(
-    firstOpen
- )
-}
 
 return(<div className='infoButtons'>
-<button className={classInfo()}  onClick={()=>tabClicked('1')}>
+<button className='infobutton'  onClick={()=>tabClicked('1')}>
 <img src={imgA} alt='img' className='infoImg'/>
 טיפול</button>
 

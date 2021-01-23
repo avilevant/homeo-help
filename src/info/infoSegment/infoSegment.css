@@ -1,13 +1,16 @@
 .structure {
     background-color: #F0F4FF;
     padding: 20px;
-    height: 34vh;
+    height: 35vh;
+    width: 100%;
+    font-size: 18px;
     overflow: auto;
     margin: 0px;
     box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.2);
     z-index: 30;
     position: fixed;
-    top: 45vh;
+    bottom: 16vh;
+    transition: transform .3s ease-out;
 }
 
 .inner-structure {
@@ -17,12 +20,30 @@
     overflow: auto;
     margin: 0px;
     z-index: 30;
-    /* box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.2); */
+    width: 90%;
+    bottom: 16vh;
 }
 
 @media(max-width:360px) {
     .structure {
         padding: 20px;
-        height: 13vh;
+        bottom: 16vh;
+        height: 32vh;
     }
+    .inner-structure {
+        height: 29vh;
+    }
+}
+
+.showTab {
+    transform: translateY(0)
+}
+
+.closeTab {
+    transform: translateY(130%)
+}
+
+.closeIcon {
+    height: 20px;
+    padding-bottom: 10px;
 }

@@ -1,13 +1,13 @@
 .Remedy {
     display: flex;
     flex-flow: row;
-    margin: 0 20px;
+    margin: 20px;
     align-items: center;
     border-bottom: .5px solid;
 }
 
 .RemedyName {
-    margin: 0 15px;
+    margin: 15px 15px;
     min-width: 30%;
     /* margin-top: 15px; */
     text-align: center;

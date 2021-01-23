@@ -38,16 +38,12 @@ class RemedyCompare extends React.Component{
 
         let n = Cookies.getJSON('buttonId').id
         n= n-1
-        // this.setState({remedyIndex:n})
-
-        //   let remedyInfo =AllRemedyInfo[this.state.remedyIndex];
+       
         let remedyInfo =AllRemedyInfo[n];
    
            return(
 
-            //let remedyInfo = InfoRemedyAll
-            // InfoRemedy1.map(({remedyName,physical,emotional,unique})=>(
-            //                 <RemedyInfoDisplay  RemedyName={remedyName} Remedy_information={this.state.displayedInformation}  /> )) 
+           
             remedyInfo.map((e) => (
                 <RemedyInfoDisplay  RemedyName={e.remedyName} 
                 Remedy_information={this.getInfoBySelector(e, this.state.displayType)}/>)             
