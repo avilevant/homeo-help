@@ -2,12 +2,12 @@ import React from 'react';
 import './infoPage.css';
 import {Link} from 'react-router-dom';
 import Video from '../../componenets/video/video';
-import IconButton from '../../componenets/iconButton/iconButton';
+// import IconButton from '../../componenets/iconButton/iconButton';
 import RemedyCompButton from '../../componenets/remedyCompButton/remedyCompButton';
 import InfoSegments from '../../info/infoSegments/infoSegments';
 import InfoData from '../../info/infoData/infoData1';
 import Cookies from 'js-cookie';
-import AcuteList from '../../componenets/acuteList/acuteList';
+// import AcuteList from '../../componenets/acuteList/acuteList';
 class InfoPage extends React.Component{
 
   
@@ -74,12 +74,7 @@ class InfoPage extends React.Component{
     
   }
 
-  renderIcon(){
-    let m = this.state.currentId
-    return AcuteList[m].icon
-  }
-
-  
+    
 
   render(){
 
@@ -90,11 +85,8 @@ class InfoPage extends React.Component{
     
     <Video videoId={this.state.videoId} />
     </div> 
-    <div className='topLayout'>
     <div className='name1'>
     {this.state.name}
-    </div>
-    <IconButton icon={this.renderIcon()} id={this.state.currentId}/>  
     </div>
     <InfoSegments basicInfo={this.state.basicInfo} multiInfo={this.state.multiInfo}
     changeTab={this.changeTabInfo} tabToggleHandler={this.tabToggleHandler} />

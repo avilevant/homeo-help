@@ -5,6 +5,7 @@
     height: 80vh;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    overflow: auto;
 }
 
 .backdropChange {
@@ -31,4 +32,23 @@
 
 .orderContent {
     padding: 20px;
+}
+
+@media(max-width:360px) {
+    .frame {
+        margin: 10vh 20px;
+        background-color: #F0F4FF;
+        z-index: 50;
+        height: 80vh;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        font-size: 12px;
+    }
+    .remedyOrderGeneralText {
+        padding: .5px 15px;
+        font-size: 14px;
+    }
+    .pfix {
+        font-size: 14px;
+    }
 }

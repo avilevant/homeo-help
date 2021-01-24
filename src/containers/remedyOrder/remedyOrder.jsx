@@ -4,7 +4,7 @@ import OrderFrame from '../../componenets/UI/orderFrame/orderFrame';
 import packageLogo from '../../images/Asset 19.png';
 import {Link} from 'react-router-dom';
 import Cookies from 'js-cookie';
-
+import OrderForm from '../../componenets/orderForm/orderForm';
 
 
 class RemedyOrder extends React.Component{
@@ -50,6 +50,7 @@ class RemedyOrder extends React.Component{
             </div>
             </div>
             </div>
+            <OrderForm/>
             </OrderFrame>
             <button className='submitOrderButton' >שלח הזמנה</button>
             <Link to='/remedyCompare'>

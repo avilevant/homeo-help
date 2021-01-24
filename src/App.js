@@ -5,6 +5,7 @@ import MainPage from './containers/mainPage/mainPage';
 import InfoPage from './containers/infoPage/infoPage';
 import RemedyCompare from './containers/remedyCompare/remedyCompare';
 import RemedyOrder from './containers/remedyOrder/remedyOrder';
+import OrderConfirmation from './containers/orderConfirmation/orderConfirmation';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <Route path='/infoPage' component ={InfoPage}/>
     <Route path='/remedyCompare' component ={RemedyCompare}/>
     <Route path='/RemedyOrder' component ={RemedyOrder}/>
+    <Route path='/OrderConfirmation' component ={OrderConfirmation}/>
     </Switch>
     </Layout>
     </div>

@@ -3,16 +3,12 @@
         /* display: grid;
         grid-template-rows: 25% 15% 25% 25% 10%; */
     }
-    
-    .topLayout {
+    /* .topLayout {
         display: flex;
         align-items: center;
         flex-flow: row;
         justify-content: center;
-        /* padding: 10px 20px; */
-        height: 13vh;
-        z-index: 20;
-    }
+    } */
     
     .videoLayout {
         margin-top: 7vh;
@@ -20,10 +16,12 @@
     
     .name1 {
         color: #1D4AD8;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
         padding: 0 20px;
-        margin-bottom: 20px;
+        padding-top: 20px;
+        height: 7vh;
+        z-index: 20;
     }
     
     .infoPageReturn {
