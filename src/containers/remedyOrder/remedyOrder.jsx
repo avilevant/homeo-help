@@ -1,7 +1,7 @@
 import React from 'react';
 import './remedyOrder.css';
 import OrderFrame from '../../componenets/UI/orderFrame/orderFrame';
-import packageLogo from '../../images/Asset 19.png';
+import packageLogo from '../../images/Asset 36.png';
 import {Link} from 'react-router-dom';
 import Cookies from 'js-cookie';
 import OrderForm from '../../componenets/orderForm/orderForm';
@@ -46,7 +46,7 @@ class RemedyOrder extends React.Component{
             </div>
             <div className='price'>
             <p  className='pfix extraColor'><span className='kitPrice'>320</span> <span className='kitPrice'>ש"ח</span> כולל מע"מ</p>
-            <button className='kitOrderButton ' >הוספה להזמנה</button>
+            <button className='kitOrderButton ' >למידע נוסף</button>
             </div>
             </div>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './orderForm.css';
 import { useForm } from "react-hook-form";
+import {Link} from 'react-router-dom';
 
 
 export default function OrderForm() {
@@ -16,26 +17,27 @@ export default function OrderForm() {
       
         
         
-       <label htmlFor="">שם מלא </label>
+       <label htmlFor="" className='formName'>שם מלא </label>
        <div>
-       <input type='text' name="name" ref={register({ required: true })} />
+       <input type='text' name="name" ref={register({ required: true })} className='formInput'/>
        </div>
-       <label htmlFor="">אימייל</label>
+       <label htmlFor="" className='formName'>אימייל</label>
        <div>
-       <input type='text' name="email" ref={register({ required: true })} />
+       <input type='text' name="email" className='formInput' ref={register({ required: true })} />
        </div>
-       <label htmlFor="">נייד</label>
+       <label htmlFor="" className='formName'>נייד</label>
        <div>
-       <input type='tel' name="mobileNumber" ref={register({ required: true })} />
+       <input type='tel' name="mobileNumber" className='formInput' ref={register({ required: true })} />
        </div>
-       <label htmlFor="">הערות</label>
+       <label htmlFor="" className='formName'>הערות</label>
        <div>
-       <input type='text' name="name" ref={register({ required: true })} />
+       <textarea  rows = "5" cols = "60"  name="message" className='formInputBig' ref={register({ required: true })} ></textarea>
        </div>
        
         {errors.exampleRequired && <span>This field is required</span>}
-        
-        <input type="submit" />
+        <Link to='/OrderConfirmation'>
+        <input type="submit" value='הזמן עכשיו' className='inputOrderButton' />
+        </Link>
       </form>
     );
   }

@@ -2,10 +2,10 @@ import React from 'react';
 import './navigationItems.css';
 import home from '../../../images/Asset 28.png';
 import center from '../../../images/Asset 26.png';
-import sets from '../../../images/Path 113 (2).png';
+import sets from '../../../images/Asset 39.png';
 import contact from '../../../images/Path 2106 (2).png';
-import disclaimer from '../../../images/Path 113 (2).png';
-import video from '../../../images/Path 113 (2).png';
+import disclaimer from '../../../images/baseline-gavel-24px (2).png';
+import video from '../../../images/Path 700 (2).png';
 
 const NavigationItems =()=>(
     <ul className='navItems'>

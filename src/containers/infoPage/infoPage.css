@@ -19,9 +19,9 @@
         font-size: 20px;
         font-weight: bold;
         padding: 0 20px;
-        padding-top: 20px;
+        padding-top: 40px;
         height: 7vh;
-        z-index: 20;
+        /* z-index: 20; */
     }
     
     .infoPageReturn {
@@ -42,7 +42,11 @@
     } */
     
     @media(max-width:360px) {
-        .topLayout {
-            height: 10vh;
+        .name1 {
+            color: #1D4AD8;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0 20px;
+            padding-top: 30px;
         }
     }

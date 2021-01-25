@@ -1,7 +1,7 @@
 import React from 'react';
 import './orderConfirmation.css';
 import OrderFrame from '../../componenets/UI/orderFrame/orderFrame';
-import ConfirmationLogo from '../../images/Asset 19.png';
+import ConfirmationLogo from '../../images/Checkbox.png';
 import {Link} from 'react-router-dom';
 import Video from '../../componenets/video/video';
 
