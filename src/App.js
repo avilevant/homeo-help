@@ -6,6 +6,7 @@ import InfoPage from './containers/infoPage/infoPage';
 import RemedyCompare from './containers/remedyCompare/remedyCompare';
 import RemedyOrder from './containers/remedyOrder/remedyOrder';
 import OrderConfirmation from './containers/orderConfirmation/orderConfirmation';
+import VideoLibrary from './containers/videosPage/videosPage'; 
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <Route path='/remedyCompare' component ={RemedyCompare}/>
     <Route path='/RemedyOrder' component ={RemedyOrder}/>
     <Route path='/OrderConfirmation' component ={OrderConfirmation}/>
+    <Route path='/VideoLibrary' component ={VideoLibrary}/>
     </Switch>
     </Layout>
     </div>

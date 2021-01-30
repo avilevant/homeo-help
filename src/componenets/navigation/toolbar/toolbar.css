@@ -29,6 +29,10 @@
     height: 30px;
 }
 
+.ShareImg {
+    height: 30px;
+}
+
 @media(max-width:360px) {
     .logo {
         height: 25px;

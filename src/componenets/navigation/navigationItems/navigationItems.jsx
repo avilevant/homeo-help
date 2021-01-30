@@ -13,7 +13,7 @@ const NavigationItems =()=>(
         <li className='item'><img src={center} alt='home' className='sideDrawerIcon'/><a href='/' >מרכז לבנט</a></li>
         <li className='item'><img src={sets} alt='home' className='sideDrawerIcon'/><a href='/' >הזמנת ערכות</a></li>
         <li className='item'><img src={contact} alt='home' className='sideDrawerIcon'/><a href='/' >צור קשר</a></li>
-        <li className='item'><img src={video} alt='home' className='sideDrawerIcon'/><a href='/' >ספריית וידאו</a></li>
+        <li className='item'><img src={video} alt='home' className='sideDrawerIcon'/><a href='/VideoLibrary' >ספריית וידאו</a></li>
         <li className='item'><img src={disclaimer} alt='home' className='sideDrawerIcon'/><a href='/' >אחריות מקצועית</a></li>
         
     </ul>

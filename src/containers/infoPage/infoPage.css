@@ -3,12 +3,6 @@
         /* display: grid;
         grid-template-rows: 25% 15% 25% 25% 10%; */
     }
-    /* .topLayout {
-        display: flex;
-        align-items: center;
-        flex-flow: row;
-        justify-content: center;
-    } */
     
     .videoLayout {
         margin-top: 7vh;
@@ -21,25 +15,19 @@
         padding: 0 20px;
         padding-top: 40px;
         height: 7vh;
-        /* z-index: 20; */
     }
     
     .infoPageReturn {
         border: none;
-        background-color: green;
+        background-color: #F0F4FF;
         width: 30%;
         position: fixed;
         bottom: 0;
         right: 0;
         height: 7vh;
-        color: white;
+        color: #1D4AD8;
         z-index: 50;
     }
-    /* span::before {
-        content: '→';
-        font-size: 18px;
-        margin-left: 5px;
-    } */
     
     @media(max-width:360px) {
         .name1 {

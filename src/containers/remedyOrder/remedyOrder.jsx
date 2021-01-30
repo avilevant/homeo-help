@@ -15,14 +15,18 @@ class RemedyOrder extends React.Component{
 
         this.state={
             firstOrder:RemedyName,
-            finalOrder:''
+            finalOrder:'',
+            showKitInfo:false
         }
     }
 
 
+  
+
     render(){
         return(
             <div>
+            <div className='showKitInfo'>hello</div>
             <OrderFrame>
             <div className='price'>
             <div className='price1' >
@@ -46,13 +50,14 @@ class RemedyOrder extends React.Component{
             </div>
             <div className='price'>
             <p  className='pfix extraColor'><span className='kitPrice'>320</span> <span className='kitPrice'>ש"ח</span> כולל מע"מ</p>
-            <button className='kitOrderButton ' >למידע נוסף</button>
+           
+            <button className='kitOrderButton ' onClick={this.showKitInfo} >למידע נוסף</button>
             </div>
             </div>
             </div>
-            <OrderForm/>
+            
+            <OrderForm RemedyName={this.state.firstOrder}/>
             </OrderFrame>
-            <button className='submitOrderButton' >שלח הזמנה</button>
             <Link to='/remedyCompare'>
             <button className='returnToCompareRemedyButton'>חזרה</button>
             </Link> 

@@ -51,12 +51,12 @@ const AcuteList =[
             id:7
         },
         {
-            title:'הרעלת מזון - שלשולים, בחילות והקאות',
+            title:'שלשולים, בחילות והקאות',
             icon:<img className='img1' src={img8} alt="img"/>,
             id:8
         },
         {
-            title:'חתכים, דקירות וחדירת עצם זר',
+            title:'חתכים ודקירות ',
             icon:<img className='img1' src={img7} alt="img"/>,
             id:9
         },

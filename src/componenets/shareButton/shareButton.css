@@ -1,0 +1,29 @@
+.share {
+    /* background-color: rgba($color: black, $alpha: .9); */
+    background-color: black;
+    width: 70vw;
+    height: 100vh;
+    z-index: 2500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-150%);
+    transition: transform .3s ease-out;
+}
+
+.share__op {
+    transform: translateX(0);
+}
+
+.network {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.headerText {
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
