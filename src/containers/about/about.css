@@ -1,0 +1,28 @@
+.contactHeader {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.PersonalImg {
+    height: 30vh;
+}
+
+.logoImgAbout {
+    height: 15vh;
+    padding-right: 30px;
+}
+
+.aboutText {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.aboutText1 {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}

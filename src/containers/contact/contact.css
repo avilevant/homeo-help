@@ -1,0 +1,32 @@
+.conatcForm {
+    /* display: flex;
+    flex-flow: column; */
+    padding: 60px 40px;
+    /* padding-right: 40px; */
+    background-color: #F0F4FF;
+    /* height: 100%; */
+    /* margin-bottom: 7vh; */
+}
+
+.pageBuild {
+    display: flex;
+    flex-flow: column;
+    height: 93vh;
+}
+
+.contactStatement {
+    height: 30%;
+    text-align: center;
+    padding: 10px 40px;
+}
+
+.headerContact {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.headerText {
+    font-size: 16px;
+    color: black;
+    margin-top: 0px;
+}

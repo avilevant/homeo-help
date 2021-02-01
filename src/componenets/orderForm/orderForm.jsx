@@ -54,7 +54,7 @@ function OrderForm( props) {
        </div>
       
         {errors.exampleRequired && <span>This field is required</span>}
-        <input type="submit" value='הזמן עכשיו' className='inputOrderButton' />
+        <input type="submit" value='שליחה' className='inputOrderButton' />
         
       </form>
     );
