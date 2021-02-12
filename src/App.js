@@ -9,6 +9,10 @@ import OrderConfirmation from './containers/orderConfirmation/orderConfirmation'
 import VideoLibrary from './containers/videosPage/videosPage'; 
 import About from './containers/about/about';
 import Contact from './containers/contact/contact';
+import KitInfo from './containers/KitInfo/KitInfo';
+import RemedyUse from './containers/remedyUse/remedyUse';
+import Declaration from './containers/declaration/declaration';
+
 
 function App() {
   return (
@@ -23,6 +27,9 @@ function App() {
     <Route path='/VideoLibrary' component ={VideoLibrary}/>
     <Route path='/About' component ={About}/>
     <Route path='/Contact' component ={Contact}/>
+    <Route path='/KitInfo' component ={KitInfo}/>
+    <Route path='/RemedyUse' component ={RemedyUse}/>
+    <Route path='/Declaration' component ={Declaration}/>
 
 
     </Switch>

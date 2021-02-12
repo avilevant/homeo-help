@@ -25,6 +25,15 @@
     }
 }
 
+@media(min-width:500px) {
+    .ShareImg {
+        display: none;
+    }
+    .toolbar {
+        height: 15vh;
+    }
+}
+
 .logo {
     height: 30px;
 }

@@ -1,0 +1,29 @@
+.declaration {
+    padding: 30px;
+}
+
+.declarationHeader {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.declarationText {
+    margin-top: 20px;
+    font-size: 18px;
+    color: black;
+}
+
+.declarationFooter {
+    margin-top: 20px;
+}
+
+.content {
+    background-color: #F0F4FF;
+    padding-bottom: 80px;
+}
+
+.disclaimerImg {
+    height: 80px;
+    display: block;
+    margin: 50px auto;
+}

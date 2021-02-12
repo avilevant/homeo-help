@@ -1,0 +1,92 @@
+.kit_options {
+    margin: 0px;
+    padding: 0;
+    position: fixed;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row;
+    text-align: center;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 8px 2px #b6adad;
+    width: 100%;
+}
+
+.kit_name {
+    width: 150%;
+}
+
+.content {
+    background-color: #F0F4FF;
+}
+
+.kit_info {
+    padding: 90px 50px;
+    height: 100%;
+}
+
+.kitFeatureButton {
+    color: #1D4AD8;
+    width: 100%;
+    outline: none;
+    background-color: white;
+    border: none;
+    text-align: center;
+    padding: 15px 5px;
+    font-weight: bold;
+}
+
+.kitFeatureButton:active,
+.kitFeatureButton:hover,
+.active2 {
+    color: #1D4AD8;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: center;
+    padding: 15px 5px;
+    font-weight: bold;
+    background-color: #F0F4FF;
+    outline: none;
+    /* z-index: -800px; */
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 8px 2px #b6adad;
+    z-index: 40;
+    /* position: relative;
+    top: 8px; */
+}
+
+.orderButton {
+    border-radius: 25px;
+    padding: 5px 20px;
+    border: 1px solid #1D4AD8;
+    color: #1D4AD8;
+    background-color: white;
+}
+
+.special {
+    margin-top: 10px;
+    color: black;
+}
+
+.remedy_list {
+    display: flex;
+    flex-flow: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    text-align: left;
+}
+
+.kitImg {
+    height: 120px;
+    margin: 15px auto;
+    display: block;
+}
+
+.kitImg1 {
+    height: 80px;
+    margin: 20px auto;
+    display: block;
+}

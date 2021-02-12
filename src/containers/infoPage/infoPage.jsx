@@ -81,10 +81,7 @@ class InfoPage extends React.Component{
     return ( 
     
     <div className='info'>
-    <div className='videoLayout'>
-    
     <Video videoId={this.state.videoId} />
-    </div> 
     <div className='name1'>
     {this.state.name}
     </div>
