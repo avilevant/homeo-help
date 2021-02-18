@@ -2,13 +2,16 @@ import React from 'react';
 import './KitInfo.css';
 import {MidButton, SmallButton} from '../../componenets/buttons/buttons';
 import KitData from '../../info/kitData/kitData';
+import {withRouter } from 'react-router-dom';
+import Cookies from 'js-cookie';
+
 
 
 
 class KitInfo extends React.Component{
 
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         
         this.state={
             display: KitData.general_info,
@@ -38,7 +41,14 @@ class KitInfo extends React.Component{
 
     }
 
-    render(props){
+    orderInput=()=>{
+        Cookies.set('RemedyName','ערכת עזרה ראשונה')
+        Cookies.set('price','320')
+        console.log('hello')
+
+    }
+
+    render(){
 
         return(
             <div className='kit_data'>
@@ -50,8 +60,8 @@ class KitInfo extends React.Component{
             <div className='kit_info'>
             {this.state.display}
             </div>
-            <SmallButton buttonName={"חזרה"} route={()=>{props.history.goBack()}}/>
-            <MidButton buttonName={"הזמן"}/>
+            <SmallButton buttonName={"חזרה"} route={()=>{this.props.history.goBack()}}/>
+            <MidButton buttonName={"הזמן"} route={()=>{this.props.history.push('/RemedyOrder');this.orderInput()}} />
             </div>
         )
      
@@ -61,4 +71,4 @@ class KitInfo extends React.Component{
 
 }
 
-export default KitInfo;
+export default withRouter(KitInfo);

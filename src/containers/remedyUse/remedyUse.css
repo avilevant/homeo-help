@@ -11,8 +11,13 @@
     padding: 20px 50px;
 }
 
-.remedyUserText {
-    padding: 20px 40px;
+.remedyUserText1 {
+    padding: 15px 40px;
+    color: black;
+}
+
+.remedyUserText2 {
+    padding: 15px 40px;
     padding-bottom: 80px;
     color: black;
 }

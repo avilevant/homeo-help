@@ -5,6 +5,8 @@ import packageLogo from '../../images/Asset 36.png';
 import {Link} from 'react-router-dom';
 import Cookies from 'js-cookie';
 import OrderForm from '../../componenets/orderForm/orderForm';
+import {withRouter } from 'react-router-dom';
+
 
 
 class RemedyOrder extends React.Component{
@@ -12,21 +14,28 @@ class RemedyOrder extends React.Component{
         super()
 
         let RemedyName = Cookies.getJSON('RemedyName')
+        let price = Cookies.getJSON('price')
 
         this.state={
             firstOrder:RemedyName,
             finalOrder:'',
-            showKitInfo:false
+            kitPrice:price,
+            showKitInfo:'kit'
         }
     }
 
-
+    componentDidMount=()=>{
+        if(this.state.kitPrice!==50){
+            console.log(this.state.kitPrice)
+           this.setState({showKitInfo:'kitBannerHide'})
+        }
+        
+    }
   
 
     render(){
         return(
             <div>
-            <div className='showKitInfo'>hello</div>
             <OrderFrame>
             <div className='price'>
             <div className='price1' >
@@ -35,10 +44,10 @@ class RemedyOrder extends React.Component{
             </div>
             <div className='price1'>
             <p className='pfix'>מחיר כולל משלוח לסניף</p>
-            <p className='pfix extraColor'><span className='kitPrice'>50</span> <span className='kitPrice'>ש"ח</span> כולל מע"מ</p>
+            <p className='pfix extraColor'><span className='kitPrice'>{this.state.kitPrice}</span> <span className='kitPrice'>ש"ח</span> כולל מע"מ</p>
             </div>
             </div>
-            <div  className='kit'>   
+            <div  className={this.state.showKitInfo}>   
             
             <h6 className='kitHeader'>ערכת עזרה ראשונה</h6>
             
@@ -51,7 +60,7 @@ class RemedyOrder extends React.Component{
             <div className='price'>
             <p  className='pfix extraColor'><span className='kitPrice'>320</span> <span className='kitPrice'>ש"ח</span> כולל מע"מ</p>
            
-            <button className='kitOrderButton ' onClick={this.showKitInfo} >למידע נוסף</button>
+            <button className='kitOrderButton ' onClick={()=>this.props.history.push('/KitInfo')} >למידע נוסף</button>
             </div>
             </div>
             </div>
@@ -67,4 +76,4 @@ class RemedyOrder extends React.Component{
     }
 }
 
-export default RemedyOrder;
+export default withRouter(RemedyOrder);

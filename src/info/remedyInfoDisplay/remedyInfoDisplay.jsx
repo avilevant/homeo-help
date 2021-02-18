@@ -8,6 +8,8 @@ const RemedyInfoDisplay = (props) =>{
 
     const showRemedyNAme=()=>{
         Cookies.set('RemedyName',props.RemedyName)
+        Cookies.set('price','50')
+
         console.log(props.RemedyName)
     }
 

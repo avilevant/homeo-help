@@ -27,6 +27,7 @@
     text-align: right;
     margin-top: 0;
     padding: 0;
+    margin-bottom: 20px;
 }
 
 .kitHeader {
@@ -86,7 +87,8 @@
     font-weight: bold;
 }
 
-.showKitInfo {
+
+/* .showKitInfo {
     margin: 10vh 20px;
     position: fixed;
     top: 10vh;
@@ -95,7 +97,10 @@
     z-index: 70;
     height: 90vh;
     display: none;
-    /* border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    overflow: auto; */
+   
+} */
+
+.kitBannerHide {
+    display: none;
+    margin: 20px;
 }
