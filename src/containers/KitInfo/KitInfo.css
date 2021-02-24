@@ -14,10 +14,6 @@
     width: 100%;
 }
 
-.kit_name {
-    width: 150%;
-}
-
 .content {
     background-color: #F0F4FF;
 }
@@ -34,7 +30,7 @@
     background-color: white;
     border: none;
     text-align: center;
-    padding: 15px 5px;
+    padding: 25px 5px;
     font-weight: bold;
 }
 
@@ -46,12 +42,10 @@
     outline: none;
     border: none;
     text-align: center;
-    padding: 15px 5px;
+    padding: 25px 5px;
     font-weight: bold;
     background-color: #F0F4FF;
     outline: none;
-    /* z-index: -800px; */
-    padding-bottom: 20px;
     box-shadow: 2px 2px 3px 2px #b6adad;
     z-index: 40;
 }

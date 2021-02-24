@@ -13,14 +13,14 @@ function OrderForm( props) {
     const onSubmit= (e)=>{
       e.preventDefault();
       
-      console.log('hello')
+    
     emailjs.sendForm('service_1nr15xj', 'template_f6i68aa', e.target, 'user_M5W6VetrUbw5etNkqIa8l')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       }).then(
-        props.history.push("/OrderConfirmation")
+        props.confirmation==='order'? props.history.push("/OrderConfirmation") : props.history.push("/ContactConfirmation")
       )
     }
 

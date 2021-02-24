@@ -8,7 +8,7 @@
 
 .basicInfo {
     padding: 18px;
-    height: 36vh;
+    height: 37vh;
     overflow: auto;
     margin: 15px 0;
     background-color: white;
@@ -21,7 +21,7 @@
 @media(max-width:360px) {
     .basicInfo {
         padding: 15px;
-        height: 32vh;
+        height: 30vh;
         overflow: auto;
         margin: 0;
         bottom: 18vh;

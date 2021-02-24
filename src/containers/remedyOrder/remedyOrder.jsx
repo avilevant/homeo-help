@@ -65,7 +65,7 @@ class RemedyOrder extends React.Component{
             </div>
             </div>
             
-            <OrderForm RemedyName={this.state.firstOrder}/>
+            <OrderForm RemedyName={this.state.firstOrder} confirmation='order'/>
             </OrderFrame>
             <Link to='/remedyCompare'>
             <button className='returnToCompareRemedyButton'>חזרה</button>

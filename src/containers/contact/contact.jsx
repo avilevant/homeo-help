@@ -16,7 +16,7 @@ const Contact =(props)=>(
     </div>
     <ContactBar/>
     <div className='conatcForm'>
-    <OrderForm/>
+    <OrderForm confirmation='contact'/>
     </div>
     <SmallButton buttonName={'חזרה'} route={()=>{props.history.goBack()}}/>
     </div>

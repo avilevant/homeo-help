@@ -12,6 +12,8 @@ import Contact from './containers/contact/contact';
 import KitInfo from './containers/KitInfo/KitInfo';
 import RemedyUse from './containers/remedyUse/remedyUse';
 import Declaration from './containers/declaration/declaration';
+import ContactConfirmation from './containers/contactConfirmation/contactConfirmation';
+
 
 
 function App() {
@@ -30,8 +32,7 @@ function App() {
     <Route path='/KitInfo' component ={KitInfo}/>
     <Route path='/RemedyUse' component ={RemedyUse}/>
     <Route path='/Declaration' component ={Declaration}/>
-
-
+    <Route path='/ContactConfirmation' component ={ContactConfirmation}/>
     </Switch>
     </Layout>
     </div>

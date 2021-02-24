@@ -21,7 +21,7 @@ const NavigationItems =()=>(
         <li className='item'><img src={contact} alt='Contact' className='sideDrawerIcon'/><a href='/Contact' >צור קשר</a></li>
         <li className='item'><img src={video} alt='VideoLibrary' className='sideDrawerIcon'/><a href='/VideoLibrary' >ספריית וידאו</a></li>
         <li className='item'><img src={disclaimer} alt='home' className='sideDrawerIcon'/><a href='/Declaration' >הצהרת אי-אחריות</a></li>
-        <li className='item'><img src={RemedyUse} alt='home' className='sideDrawerIcon'/><a href='/RemedyUse' > שימוש בתכשיר הומאופתי</a></li>
+        <li className='item'><img src={RemedyUse} alt='home' className='sideDrawerIcon'/><a href='/RemedyUse' > תרופה הומאופתית</a></li>
         <li className='item'><img src={appImg} alt='home' className='sideDrawerIcon'/><a href='/RemedyUse' > שימוש באפליקציה </a></li>
         
     </ul>

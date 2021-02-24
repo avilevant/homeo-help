@@ -51,9 +51,8 @@ class KitInfo extends React.Component{
     render(){
 
         return(
-            <div className='kit_data'>
-            <div className='kit_options'>
-            <p className='kit_name'>פרטי הערכה</p>   
+            <div className='kit_data'>           
+            <div className='kit_options'> 
             <button className={this.buttonStateOnEntry()} onClick={()=>this.KitInfoShow("1")} >מידע על הערכה</button>
             <button className='kitFeatureButton' onClick={()=>this.KitInfoShow("2")} >תכולת הערכה</button>
             </div>
