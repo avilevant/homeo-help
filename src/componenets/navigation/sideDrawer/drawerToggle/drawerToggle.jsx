@@ -3,26 +3,26 @@ import './drawerToggle.css';
 
 const DrawerToggle =(props)=>{
 
-    let topLine,centerLine,bottomLine   
+    // let topLine,centerLine,bottomLine   
 
+    let DrawerToggle
     if(props.open){
-        topLine='topLine topLine_open';
-        centerLine='centerLine centerLine_open';
-        bottomLine='bottomLine bottomLine_open';
+        DrawerToggle ='menu-btn open'
+        // topLine='topLine topLine_open';
+        // centerLine='centerLine centerLine_open';
+        // bottomLine='bottomLine bottomLine_open';
     }
     else{
-        topLine='topLine';
-        centerLine='centerLine';
-        bottomLine='bottomLine';
+        DrawerToggle ='menu-btn'        // topLine='topLine';
+        // centerLine='centerLine';
+        // bottomLine='bottomLine';
     }
 
 
     return(
 
-        <div className='DrawerToggle'  onClick={props.clicked}>
-            <div className={topLine}></div>
-            <div className={centerLine}></div>
-            <div className={bottomLine}></div>
+        <div className={DrawerToggle}  onClick={props.clicked}>
+            <div className="menu-btn__burger"></div>
         </div>
     )
 

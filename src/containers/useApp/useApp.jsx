@@ -3,7 +3,6 @@ import './useApp.css';
 import Video from '../../componenets/video/video';
 import { BigButtonBlue } from '../../componenets/buttons/buttons';
 import { withRouter } from 'react-router-dom';
-import imgOfApp from '../../images/Asset 53.png';
 
 const UseApp =(props)=>(
 <div>
