@@ -1,7 +1,7 @@
 .structure {
     background-color: #F0F4FF;
     padding: 20px;
-    height: 37vh;
+    height: 40vh;
     width: 100%;
     font-size: 18px;
     overflow: auto;
@@ -16,7 +16,7 @@
 .inner-structure {
     background-color: #F0F4FF;
     /* padding: 20px; */
-    height: 32vh;
+    height: 35vh;
     overflow: auto;
     margin: 0px;
     z-index: 30;

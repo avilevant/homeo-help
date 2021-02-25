@@ -6,10 +6,13 @@
     border-bottom: .5px solid;
 }
 
+.Remedy:last-child {
+    border-bottom: 0px;
+}
+
 .RemedyName {
     margin: 15px 15px;
     min-width: 30%;
-    /* margin-top: 15px; */
     text-align: center;
 }
 

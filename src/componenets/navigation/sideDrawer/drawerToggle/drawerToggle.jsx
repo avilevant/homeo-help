@@ -1,25 +1,31 @@
 import React from 'react';
-import './drawerToggle.css'
-import hamburgerButton from '../../../../images/x_and_menu_icons-56.png'
+import './drawerToggle.css';
 
 const DrawerToggle =(props)=>{
 
+    let topLine,centerLine,bottomLine   
 
-    if(props.drawerOpen){
-        return(
-
-            <img src={hamburgerButton} alt='hamburgurButton' onClick={props.clicked} className='hamburger' />
-        )
-    }else{
-        return(
-
-            <div className='DrawerToggle'  onClick={props.clicked}>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        )
+    if(props.open){
+        topLine='topLine topLine_open';
+        centerLine='centerLine centerLine_open';
+        bottomLine='bottomLine bottomLine_open';
     }
+    else{
+        topLine='topLine';
+        centerLine='centerLine';
+        bottomLine='bottomLine';
+    }
+
+
+    return(
+
+        <div className='DrawerToggle'  onClick={props.clicked}>
+            <div className={topLine}></div>
+            <div className={centerLine}></div>
+            <div className={bottomLine}></div>
+        </div>
+    )
+
 }
 
 

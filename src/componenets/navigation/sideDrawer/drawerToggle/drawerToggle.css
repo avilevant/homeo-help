@@ -10,10 +10,26 @@
     cursor: pointer;
 }
 
-.DrawerToggle div {
+.topLine,
+.centerLine,
+.bottomLine {
     width: 90%;
     height: 3px;
     background-color: #1D4AD8;
+    transition: all .5s ease-in-out;
+}
+
+.topLine_open {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.centerLine_open {
+    transform: translateX(-50px);
+    background-color: transparent;
+}
+
+.bottomLine_open {
+    transform: rotate(-45deg) translate(4px, -4px);
 }
 
 @media (min-width: 500px) {

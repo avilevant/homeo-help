@@ -1,0 +1,23 @@
+.useApp {
+    margin-top: 50px;
+    text-align: right;
+}
+
+
+/* .useAppVideo {
+    margin-top: 50px;
+} */
+
+.imgOfApp {
+    width: 25%;
+    margin: 50px auto;
+    display: block;
+}
+
+.useAppText {
+    padding: 0 40px;
+}
+
+.useAppTextSmall {
+    color: black;
+}

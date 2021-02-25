@@ -22,7 +22,7 @@ class Layout extends Component{
     render(){
         return(
              <div  >
-    <ToolBar DrawerToggleClicked={this.SideDrawerToggleHandler}/>
+    <ToolBar DrawerToggleClicked={this.SideDrawerToggleHandler} openDrawer={this.state.SideDrawerShow}/>
     <SideDrawer open={this.state.SideDrawerShow} closed={this.SideDrawerClose} DrawerToggleClicked={this.SideDrawerToggleHandler}/>
     <main className='content' >
     {this.props.children}

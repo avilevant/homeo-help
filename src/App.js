@@ -13,6 +13,7 @@ import KitInfo from './containers/KitInfo/KitInfo';
 import RemedyUse from './containers/remedyUse/remedyUse';
 import Declaration from './containers/declaration/declaration';
 import ContactConfirmation from './containers/contactConfirmation/contactConfirmation';
+import UseApp from './containers/useApp/useApp';
 
 
 
@@ -33,6 +34,7 @@ function App() {
     <Route path='/RemedyUse' component ={RemedyUse}/>
     <Route path='/Declaration' component ={Declaration}/>
     <Route path='/ContactConfirmation' component ={ContactConfirmation}/>
+    <Route path='/UseApp' component ={UseApp}/>
     </Switch>
     </Layout>
     </div>

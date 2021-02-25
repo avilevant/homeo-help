@@ -20,7 +20,7 @@ const ToolBar =(props)=>{
     return(
         <header className='toolbar'>
         <Share/> 
-        <DrawerToggle clicked={props.DrawerToggleClicked} />
+        <DrawerToggle clicked={props.DrawerToggleClicked} open={props.openDrawer}/>
        
         <Link to='/'>
         <img src={Logo} alt='logo' className='logo' />
