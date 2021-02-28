@@ -1,25 +1,16 @@
 import React from 'react';
 import YouTube from 'react-youtube';
+import './video.css';
 
 
 const Video = (props)=>{
     const opts = {
-        height: '160vh',
         width: '100%',
-        
-        playerVars: {
-            // https://developers.google.com/youtube/player_parameters
-            // autoplay: 1,
-            // controls:0,
-            
-            
-
-          },
-       
+        height:'200px'    
         }
 
   return ( 
-    <div className='video'>
+    <div>
     <YouTube videoId={props.videoId} opts={opts} />
     
     </div>)

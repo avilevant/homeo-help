@@ -4,7 +4,7 @@ import  './mainPage.css';
 import MainButtonGrid from '../../componenets/mainButtondGrid/mainButtondGrid';
 
 const MainPage = ()=>(
-    <div>
+    <div className='mainPageColor'>
     <h1 className='firstHeader'>עזרה ראשונה</h1>
     <h1 className='secondHeader'> הומאופתיה ורפואה טבעית</h1>
     <MainButtonGrid/>

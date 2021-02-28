@@ -1,19 +1,17 @@
 import React from 'react';
 import './infoPage.css';
-import {Link} from 'react-router-dom';
 import Video from '../../componenets/video/video';
-// import IconButton from '../../componenets/iconButton/iconButton';
-import RemedyCompButton from '../../componenets/remedyCompButton/remedyCompButton';
-import InfoSegments from '../../info/infoSegments/infoSegments';
+import {  MidButton, SmallButton} from '../../componenets/buttons/buttons';
+import InfoButtons from '../../info/infoButtons/infoButtons';
 import InfoData from '../../info/infoData/infoData1';
 import Cookies from 'js-cookie';
-// import AcuteList from '../../componenets/acuteList/acuteList';
-class InfoPage extends React.Component{
+import {withRouter } from 'react-router-dom';
 
-  
-  
+
+class InfoPage extends React.Component{
+ 
   constructor(props){
-    super()
+    super(props)
    
     let n = Cookies.getJSON('buttonId').id
     n=n-1
@@ -21,17 +19,15 @@ class InfoPage extends React.Component{
     this.state = {
       videoId:InfoData[n].video,
       name:InfoData[n].name,
-      basicInfo:InfoData[n].generalInfo,
-      multiInfo:'',
+      firstButtonState:'activebutton',
+      multiInfo:InfoData[n].generalInfo,
       currentId:n
-      
-
-
     }
-    
-    
-    
   }
+  
+  // componentDidMount=()=>{
+
+  // }
   
 
   tabToggleHandler =()=>{
@@ -41,8 +37,6 @@ class InfoPage extends React.Component{
   }
 
   
-  
-
   changeTabInfo=(x)=>{
     let n = this.state.currentId
     
@@ -50,22 +44,27 @@ class InfoPage extends React.Component{
           case '1':
           this.state.multiInfo === InfoData[n].firstAid ?
           this.tabToggleHandler() : 
-          this.setState({multiInfo:InfoData[n].firstAid})
+          this.setState({multiInfo:InfoData[n].firstAid,firstButtonState:'infobutton' })
           break;
           case '2':
           this.state.multiInfo === InfoData[n].nutrition ?
           this.tabToggleHandler() :  
-          this.setState({multiInfo:InfoData[n].nutrition})
+          this.setState({multiInfo:InfoData[n].nutrition,firstButtonState:'infobutton'})
           break;
           case '3':
           this.state.multiInfo === InfoData[n].grandma ?
           this.tabToggleHandler() :  
-          this.setState({multiInfo:InfoData[n].grandma})
+          this.setState({multiInfo:InfoData[n].grandma,firstButtonState:'infobutton'})
           break;
           case '4':
           this.state.multiInfo === InfoData[n].homeopathy ?
           this.tabToggleHandler() :
-          this.setState({multiInfo:InfoData[n].homeopathy})
+          this.setState({multiInfo:InfoData[n].homeopathy,firstButtonState:'infobutton'})
+          break;
+          case '5':
+          this.state.multiInfo === InfoData[n].generalInfo ?
+          this.tabToggleHandler() :
+          this.setState({multiInfo:InfoData[n].generalInfo})
           break;
         default:
           this.setState({multiInfo:InfoData[n].firstAid})
@@ -74,7 +73,19 @@ class InfoPage extends React.Component{
     
   }
 
-    
+  // </div>
+  // <InfoSegments basicInfo={this.state.basicInfo} multiInfo={this.state.multiInfo}
+  // changeTab={this.changeTabInfo} tabToggleHandler={this.tabToggleHandler} />
+  // <div>
+
+  // <div className='infoPageHeader'>
+  //   <div className='name1'>
+  //   {this.state.name}
+  //   </div>
+  //   <button className='GeneralInfoButton' onClick={()=>this.changeTabInfo('5')}>
+  //   <img src={infoImg} alt='img' className='infoImg'/>
+  //   מידע כללי</button>
+  //   </div> 
 
   render(){
 
@@ -82,21 +93,22 @@ class InfoPage extends React.Component{
     
     <div className='info'>
     <Video videoId={this.state.videoId} />
+    <InfoButtons changeTab1={this.changeTabInfo}  tabToggleHandler={this.tabToggleHandler} class={this.state.firstButtonState}/>
     <div className='name1'>
     {this.state.name}
     </div>
-    <InfoSegments basicInfo={this.state.basicInfo} multiInfo={this.state.multiInfo}
-    changeTab={this.changeTabInfo} tabToggleHandler={this.tabToggleHandler} />
-    <div>
-    <Link to='/'>
-    <button className='infoPageReturn'><span>חזרה</span></button>
-    </Link>
-    <RemedyCompButton />
-    </div> 
+    <div className='multiInfoPresent'>
+    {this.state.multiInfo}      
+    </div>
+    <div className='wrap'>
+    <SmallButton buttonName={'חזרה'} route={()=>{this.props.history.goBack()}}/>
+    <MidButton buttonName={'השוואת תרופות הומאופתיות'} route={()=>{this.props.history.push('/remedyCompare')}}/>
+    </div>  
+    
     </div>
     )}
 
 }
 
 
-export default InfoPage;
+export default withRouter(InfoPage);

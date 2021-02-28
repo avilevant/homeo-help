@@ -1,6 +1,5 @@
 .toolbar {
-    /* height: 56px; */
-    height: 7vh;
+    height: 50px;
     width: 100%;
     position: fixed;
     top: 0;

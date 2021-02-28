@@ -4,6 +4,8 @@ import imgA from '../../images/Asset 5.png';
 import imgB from '../../images/Path 2075.png';
 import imgC from '../../images/Path 2077.png';
 import imgD from '../../images/Path 113.png';
+import imgE from '../../images/Path 2106.png';
+
 
 const InfoButton =(props)=>{
 
@@ -14,7 +16,17 @@ const  tabClicked = (x)=>{
 
 
 
-return(<div className='infoButtons'>
+return(
+
+   
+    
+<div className='infoButtons'>
+
+<button className={props.class} onClick={()=>tabClicked('5')}>
+<img src={imgE} alt='img' className='infoImg'/>
+מידע כללי
+</button>    
+
 <button className='infobutton'  onClick={()=>tabClicked('1')}>
 <img src={imgA} alt='img' className='infoImg'/>
 טיפול</button>
@@ -31,6 +43,12 @@ return(<div className='infoButtons'>
 <img src={imgD} alt='img' className='infoImg'/>
 טיפול הומאופתי
 </button>
+
+
+
+
+
+
 
 
 

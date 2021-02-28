@@ -1,4 +1,9 @@
-/* .video {
-    height: 150px;
-    width: 100%;
-} */
+div.ytp-chrome-top {
+    visibility: hidden;
+    display: none;
+    z-index: 0;
+}
+
+div.ytp-chrome-top.ytp-show-cards-title {
+    visibility: hidden;
+}

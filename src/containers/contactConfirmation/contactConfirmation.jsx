@@ -1,10 +1,10 @@
 import React from 'react';
 import './contactConfirmation.css';
 import ConfirmationLogo1 from '../../images/Asset 62.png';
-import {Link} from 'react-router-dom';
+import { BigButtonBlue } from '../../componenets/buttons/buttons';
 import Video from '../../componenets/video/video';
 
-const ContactConfirmation = ()=>(
+const ContactConfirmation = (props)=>(
     <div>
     
     <div className='topOrderConfirmation'>
@@ -21,9 +21,7 @@ const ContactConfirmation = ()=>(
     <Video videoId={"XsnABbOCjtQ"} />
     </div>
     </div>
-    <Link to='/'>
-    <button className='returnHome'>חזרה למסך ראשי</button>
-    </Link>
+    <BigButtonBlue buttonName={'חזרה למסך ראשי'} route={()=>{props.history.push('/')}}/>
     </div>
 )
 

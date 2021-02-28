@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 7vh;
+    height: 50px;
     width: 100%;
     background-color: #1D4AD8;
     color: white;
@@ -16,7 +16,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 7vh;
+    height: 50px;
     width: 100%;
     background-color: #87D654;
     color: white;
@@ -30,7 +30,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 7vh;
+    height: 50px;
     width: 75%;
     background-color: #1D4AD8;
     color: white;
@@ -44,7 +44,7 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    height: 7vh;
+    height: 50px;
     width: 25%;
     background-color: #F0F4FF;
     color: #1D4AD8;

@@ -59,7 +59,7 @@ class RemedyCompare extends React.Component{
         tabFirstopen=()=>{
           let firstOpen =''
           if(this.state.tabOnRender==='clicked'){
-              firstOpen ='remedyFeatureButton active2'
+              firstOpen ='remedyFeatureButton active1'
           }else{
             firstOpen ='remedyFeatureButton'
           }

@@ -9,15 +9,17 @@
     justify-content: space-between;
     flex-flow: row;
     text-align: center;
-    color: black;
+    color: #1D4AD8;
     background-color: white;
-    box-shadow: 0px 0px 8px 2px #b6adad;
+    /* box-shadow: 0px 0px 8px 2px #b6adad; */
     width: 100%;
-    /* background-color: #1D4AD8; */
+    /* background-color: #F0F4FF; */
 }
 
 .remedy_name {
     width: 200%;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .returnButton {
@@ -51,11 +53,12 @@
     text-align: center;
     padding: 25px 5px;
     font-weight: bold;
+    box-shadow: .5px .5px .5px .5px rgba(0, 0, 0, 0.2);
 }
 
 .remedyFeatureButton:active,
 .remedyFeatureButton:hover,
-.active2 {
+.active1 {
     color: #1D4AD8;
     width: 100%;
     outline: none;
@@ -64,14 +67,15 @@
     font-weight: bold;
     background-color: #F0F4FF;
     outline: none;
-    box-shadow: 3px 3px 3px 2px #b6adad;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
     z-index: 400;
 }
 
 .orderButton {
     border-radius: 25px;
     padding: 5px 20px;
-    border: 1px solid #1D4AD8;
+    /* border: 1px solid #1D4AD8; */
     color: #1D4AD8;
     background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
