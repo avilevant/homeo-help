@@ -7,10 +7,6 @@ const BigButtonBlue=(props)=>(
 )
 
 
-// const MidButtonGreen=(props)=>(
-// <button className='BigButtonGreen' onClick={props.route}>{props.buttonName}</button>
-// )
-
 
 const MidButton=(props)=>(
 <button className='MidButton' onClick={props.route}>{props.buttonName}</button>

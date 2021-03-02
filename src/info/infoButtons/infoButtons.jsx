@@ -1,10 +1,10 @@
 import React from 'react';
 import './infoButtons.css';
-import imgA from '../../images/Asset 5.png';
-import imgB from '../../images/Path 2075.png';
-import imgC from '../../images/Path 2077.png';
-import imgD from '../../images/Path 113.png';
-import imgE from '../../images/Path 2106.png';
+import imgA from '../../images/Asset 631.png';
+import imgB from '../../images/Path 2075 (2).png';
+import imgC from '../../images/Path 2077 (2).png';
+import imgD from '../../images/Path 113 (3).png';
+import imgE from '../../images/Asset 63.png';
 
 
 const InfoButton =(props)=>{

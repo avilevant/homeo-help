@@ -2,11 +2,13 @@ import React from 'react';
 import './orderConfirmation.css';
 import OrderFrame from '../../componenets/UI/orderFrame/orderFrame';
 import ConfirmationLogo from '../../images/Checkbox.png';
-import {Link} from 'react-router-dom';
+import { BigButtonBlue } from '../../componenets/buttons/buttons';
 import Video from '../../componenets/video/video';
+import {withRouter } from 'react-router-dom';
 
 
-const OrderConfirmation = ()=>(
+
+const OrderConfirmation = (props)=>(
     <div>
     <OrderFrame>
     <div className='topOrderConfirmation'>
@@ -23,10 +25,8 @@ const OrderConfirmation = ()=>(
     </div>
     </div>
     </OrderFrame>
-    <Link to='/'>
-    <button className='returnHome'>חזרה למסך ראשי</button>
-    </Link>
+    <BigButtonBlue   buttonName={"חזרה למסך ראשי"} route={()=>{props.history.push('/')}}/>
     </div>
 )
 
-export default OrderConfirmation;
+export default withRouter(OrderConfirmation);

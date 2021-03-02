@@ -2,7 +2,7 @@ import React from 'react';
 import './remedyOrder.css';
 import OrderFrame from '../../componenets/UI/orderFrame/orderFrame';
 import packageLogo from '../../images/Asset 36.png';
-import {Link} from 'react-router-dom';
+import { SmallButton } from '../../componenets/buttons/buttons';
 import Cookies from 'js-cookie';
 import OrderForm from '../../componenets/orderForm/orderForm';
 import {withRouter } from 'react-router-dom';
@@ -67,9 +67,7 @@ class RemedyOrder extends React.Component{
             
             <OrderForm RemedyName={this.state.firstOrder} confirmation='order'/>
             </OrderFrame>
-            <Link to='/remedyCompare'>
-            <button className='returnToCompareRemedyButton'>חזרה</button>
-            </Link> 
+            <SmallButton buttonName={"חזרה"} route={()=>{this.props.history.goBack()}}/>
             </div>
             
         )

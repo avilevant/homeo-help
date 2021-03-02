@@ -10,7 +10,6 @@
     text-align: center;
     color: black;
     background-color: white;
-    box-shadow: 0px 0px 8px 2px #b6adad;
     width: 100%;
 }
 
@@ -23,11 +22,13 @@
     color: #1D4AD8;
     width: 100%;
     outline: none;
+    font-size: 16px;
     background-color: white;
     border: none;
     text-align: center;
     padding: 25px 5px;
     font-weight: bold;
+    box-shadow: .5px .5px .5px .5px #b6adad;
 }
 
 .kitFeatureButton:active,
@@ -37,12 +38,13 @@
     width: 100%;
     outline: none;
     border: none;
+    font-size: 16px;
     text-align: center;
     padding: 25px 5px;
     font-weight: bold;
     background-color: #F0F4FF;
     outline: none;
-    box-shadow: 2px 2px 3px 2px #b6adad;
+    box-shadow: 1px 1px 1px 1px #b6adad;
     z-index: 40;
 }
 
@@ -58,6 +60,7 @@
     margin-top: 10px;
     color: black;
     text-align: right;
+    font-weight: 500;
 }
 
 .remedy_list {

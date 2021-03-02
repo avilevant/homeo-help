@@ -31,17 +31,17 @@ function OrderForm( props) {
         
       <form onSubmit={onSubmit}>  
         
-       <label htmlFor="" className='formName'>שם מלא </label>
+       <label htmlFor="" className='formName' required>שם מלא </label>
        <div>
        <input type='text' name="name" ref={register({ required: true })} className='formInput'/>
        </div>
        <label htmlFor="" className='formName'>אימייל</label>
        <div>
-       <input type='text' name="email" className='formInput' ref={register({ required: true })} />
+       <input type='email' name="email" className='formInput' required ref={register({ required: true })} />
        </div>
        <label htmlFor="" className='formName'>נייד</label>
        <div>
-       <input type='tel' name="mobileNumber" className='formInput' ref={register({ required: true })} />
+       <input type='tel' pattern="^\d{10}$" name="mobileNumber" className='formInput' required ref={register({ required: true })} />
        </div>
        <label htmlFor="" className='formName'>הערות</label>
        <div>

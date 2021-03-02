@@ -63,7 +63,7 @@
 .menu-btn__burger {
     width: 30px;
     height: 3px;
-    background-color: #1D4AD8;
+    background-color: #2250b4;
     border-radius: 5px;
     /* box-shadow: 0 2px 5px rgba(255, 101, 47, .2); */
     transition: all .5s ease-in-out;
@@ -75,7 +75,7 @@
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: #1D4AD8;
+    background-color: #2250b4;
     border-radius: 5px;
     /* box-shadow: 0 2px 5px rgba(255, 101, 47, .2); */
     transition: all .5s ease-in-out;

@@ -25,67 +25,74 @@ class InfoPage extends React.Component{
     }
   }
   
-  // componentDidMount=()=>{
-
+ 
+  // tabToggleHandler =()=>{
+  //   this.setState((prevState)=>{
+  //     return{multiInfo:!prevState.multiInfo}
+  //   })
   // }
-  
-
-  tabToggleHandler =()=>{
-    this.setState((prevState)=>{
-      return{multiInfo:!prevState.multiInfo}
-    })
-  }
 
   
   changeTabInfo=(x)=>{
     let n = this.state.currentId
     
-      switch(x){
-          case '1':
-          this.state.multiInfo === InfoData[n].firstAid ?
-          this.tabToggleHandler() : 
-          this.setState({multiInfo:InfoData[n].firstAid,firstButtonState:'infobutton' })
-          break;
-          case '2':
-          this.state.multiInfo === InfoData[n].nutrition ?
-          this.tabToggleHandler() :  
-          this.setState({multiInfo:InfoData[n].nutrition,firstButtonState:'infobutton'})
-          break;
-          case '3':
-          this.state.multiInfo === InfoData[n].grandma ?
-          this.tabToggleHandler() :  
-          this.setState({multiInfo:InfoData[n].grandma,firstButtonState:'infobutton'})
-          break;
-          case '4':
-          this.state.multiInfo === InfoData[n].homeopathy ?
-          this.tabToggleHandler() :
-          this.setState({multiInfo:InfoData[n].homeopathy,firstButtonState:'infobutton'})
-          break;
-          case '5':
-          this.state.multiInfo === InfoData[n].generalInfo ?
-          this.tabToggleHandler() :
-          this.setState({multiInfo:InfoData[n].generalInfo})
-          break;
-        default:
-          this.setState({multiInfo:InfoData[n].firstAid})
-      }    
+      // switch(x){
+      //     case '1':
+      //     this.state.multiInfo === InfoData[n].firstAid ?
+      //     this.tabToggleHandler() : 
+      //     this.setState({multiInfo:InfoData[n].firstAid,firstButtonState:'infobutton' })
+      //     break;
+      //     case '2':
+      //     this.state.multiInfo === InfoData[n].nutrition ?
+      //     this.tabToggleHandler() :  
+      //     this.setState({multiInfo:InfoData[n].nutrition,firstButtonState:'infobutton'})
+      //     break;
+      //     case '3':
+      //     this.state.multiInfo === InfoData[n].grandma ?
+      //     this.tabToggleHandler() :  
+      //     this.setState({multiInfo:InfoData[n].grandma,firstButtonState:'infobutton'})
+      //     break;
+      //     case '4':
+      //     this.state.multiInfo === InfoData[n].homeopathy ?
+      //     this.tabToggleHandler() :
+      //     this.setState({multiInfo:InfoData[n].homeopathy,firstButtonState:'infobutton'})
+      //     break;
+      //     case '5':
+      //     this.state.multiInfo === InfoData[n].generalInfo ?
+      //     this.tabToggleHandler() :
+      //     this.setState({multiInfo:InfoData[n].generalInfo})
+      //     break;
+      //   default:
+      //     this.setState({multiInfo:InfoData[n].firstAid})
+      // }    
     
+      switch(x){
+        case '1':
+        if(this.state.multiInfo !== InfoData[n].firstAid) 
+        this.setState({multiInfo:InfoData[n].firstAid,firstButtonState:'infobutton' })
+        break;
+        case '2':
+        if(this.state.multiInfo !== InfoData[n].nutrition) 
+        this.setState({multiInfo:InfoData[n].nutrition,firstButtonState:'infobutton'})
+        break;
+        case '3':
+        if(this.state.multiInfo !== InfoData[n].grandma)
+        this.setState({multiInfo:InfoData[n].grandma,firstButtonState:'infobutton'})
+        break;
+        case '4':
+        if(this.state.multiInfo !== InfoData[n].homeopathy) 
+        this.setState({multiInfo:InfoData[n].homeopathy,firstButtonState:'infobutton'})
+        break;
+        case '5':
+        if(this.state.multiInfo !== InfoData[n].generalInfo)
+        this.setState({multiInfo:InfoData[n].generalInfo})
+        break;
+      default:
+        this.setState({multiInfo:InfoData[n].firstAid})
+    }   
     
   }
 
-  // </div>
-  // <InfoSegments basicInfo={this.state.basicInfo} multiInfo={this.state.multiInfo}
-  // changeTab={this.changeTabInfo} tabToggleHandler={this.tabToggleHandler} />
-  // <div>
-
-  // <div className='infoPageHeader'>
-  //   <div className='name1'>
-  //   {this.state.name}
-  //   </div>
-  //   <button className='GeneralInfoButton' onClick={()=>this.changeTabInfo('5')}>
-  //   <img src={infoImg} alt='img' className='infoImg'/>
-  //   מידע כללי</button>
-  //   </div> 
 
   render(){
 
@@ -100,10 +107,10 @@ class InfoPage extends React.Component{
     <div className='multiInfoPresent'>
     {this.state.multiInfo}      
     </div>
-    <div className='wrap'>
+    
     <SmallButton buttonName={'חזרה'} route={()=>{this.props.history.goBack()}}/>
     <MidButton buttonName={'השוואת תרופות הומאופתיות'} route={()=>{this.props.history.push('/remedyCompare')}}/>
-    </div>  
+     
     
     </div>
     )}

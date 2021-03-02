@@ -32,7 +32,7 @@
 
 .kitHeader {
     text-align: center;
-    color: #1D4AD8;
+    color: #2250b4;
     padding: 0;
     margin: 0;
     margin-right: 30px;
@@ -58,8 +58,8 @@
 
 .kitOrderButton {
     background-color: transparent;
-    color: #1D4AD8;
-    border: 1px solid #1D4AD8;
+    color: #2250b4;
+    border: 1px solid #2250b4;
     border-radius: 15px;
     margin: 10px 0;
     height: 25px;
@@ -72,14 +72,14 @@
     height: 7vh;
     width: 25vw;
     border: none;
-    color: #1D4AD8;
+    color: #2250b4;
     background-color: #F0F4FF;
     font-size: 16px;
     font-weight: bold;
 }
 
 .extraColor {
-    color: #1D4AD8;
+    color: #2250b4;
 }
 
 .kitPrice {

@@ -2,56 +2,52 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 50px;
+    height: 70px;
     width: 100%;
-    background-color: #1D4AD8;
+    background-color: #2250b4;
     color: white;
     padding: 10px 0;
     border: none;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.MidButtonGreen {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 50px;
-    width: 100%;
-    background-color: #87D654;
-    color: white;
-    padding: 10px 0;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
+    /* font-weight: bold; */
 }
 
 .MidButton {
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 50px;
+    height: 70px;
     width: 75%;
-    background-color: #1D4AD8;
+    background-color: #2250b4;
     color: white;
     padding: 10px 0;
     border: none;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
+    /* font-weight: bold; */
 }
 
 .SmallButton {
     position: fixed;
     bottom: 0;
     right: 0;
-    height: 50px;
+    height: 70px;
     width: 25%;
     background-color: #F0F4FF;
-    color: #1D4AD8;
+    color: #2250b4;
     padding: 10px 0;
     border: none;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
+    /* font-weight: bold; */
     box-shadow: 0px 0px 3px 1px #b6adad;
     z-index: 50;
+}
+
+@media(max-width:400px) {
+    .BigButtonBlue,
+    .SmallButton,
+    .MidButton,
+    .MidButtonGreen {
+        height: 50px;
+        font-size: 18px;
+    }
 }

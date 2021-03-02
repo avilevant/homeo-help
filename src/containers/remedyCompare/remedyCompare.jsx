@@ -1,6 +1,7 @@
 import React from 'react';
 import './remedyCompare.css';
-import {Link} from 'react-router-dom';
+import {withRouter } from 'react-router-dom';
+import { BigButtonBlue } from '../../componenets/buttons/buttons';
 import RemedyInfoDisplay from '../../info/remedyInfoDisplay/remedyInfoDisplay';
 import AllRemedyInfo from '../../info/infoRemedy/infoRemedy';
 import Cookies from 'js-cookie';
@@ -98,13 +99,8 @@ render(){
         </div>
         
         
-    
-        <Link to='/infoPage'>
         
-        <button className='returnButton'>
-        חזרה
-        </button>
-        </Link>
+        <BigButtonBlue buttonName={"חזרה"} route={()=>{this.props.history.goBack()}}/>
         
         </div>
        )
@@ -115,4 +111,4 @@ render(){
 
 }
 
-export default RemedyCompare;
+export default withRouter(RemedyCompare);
