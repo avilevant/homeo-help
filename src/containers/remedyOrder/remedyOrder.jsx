@@ -52,12 +52,12 @@ class RemedyOrder extends React.Component{
             <h6 className='kitHeader'>ערכת עזרה ראשונה</h6>
             
             <div>
-            <div className='price'>
+            <div className='price_banner'>
             <img src={packageLogo} alt='package' className='packageLogo' />
             <p className='extraInfo extraColor'>   מכילה 10 סוגי רמדי שונים למירב המצבים היומיומיים</p>
             
             </div>
-            <div className='price'>
+            <div className='price_banner'>
             <p  className='pfix extraColor'><span className='kitPrice'>320</span> <span className='kitPrice'>ש"ח</span> כולל מע"מ</p>
            
             <button className='kitOrderButton ' onClick={()=>this.props.history.push('/KitInfo')} >למידע נוסף</button>

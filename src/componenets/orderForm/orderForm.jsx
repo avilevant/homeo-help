@@ -1,13 +1,13 @@
 import React from 'react';
 import './orderForm.css';
-import { useForm } from "react-hook-form";
+// import { useForm } from "react-hook-form";
 import {withRouter } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 
 
 function OrderForm( props) {
     
-    const { register,  errors } = useForm();
+    // const { register,  errors } = useForm();
     // const onSubmit = data => console.log(data);
 
     const onSubmit= (e)=>{
@@ -26,34 +26,67 @@ function OrderForm( props) {
 
     
   
+    // return (
+     
+        
+    //   <form onSubmit={onSubmit}>  
+        
+    //    <label htmlFor="" className='formName' required>שם מלא </label>
+    //    <div>
+    //    <input type='text' name="name" ref={register({ required: true })} className='formInput'/>
+    //    </div>
+    //    <label htmlFor="" className='formName'>אימייל</label>
+    //    <div>
+    //    <input type='email' name="email" className='formInput' required ref={register({ required: true })} />
+    //    </div>
+    //    <label htmlFor="" className='formName'>נייד</label>
+    //    <div>
+    //    <input type='tel' pattern="^\d{10}$" name="mobileNumber" className='formInput' required ref={register({ required: true })} />
+    //    </div>
+    //    <label htmlFor="" className='formName'>הערות</label>
+    //    <div>
+
+    //    <div>
+    //    <input type='hidden' name="RemedyName" defaultValue={props.RemedyName} className='formInput' ref={register} />
+    //    </div>
+       
+    //    <textarea  rows = "5" cols = "60"  name="message" className='formInputBig' ref={register} ></textarea>
+    //    </div>
+      
+    //     {errors.exampleRequired && <span>This field is required</span>}
+    //     <input type="submit" value='שליחה' className='inputOrderButton' />
+        
+    //   </form>
+    // );
+
     return (
      
         
       <form onSubmit={onSubmit}>  
         
-       <label htmlFor="" className='formName' required>שם מלא </label>
+       <label htmlFor="" className='formName' >שם מלא </label>
        <div>
-       <input type='text' name="name" ref={register({ required: true })} className='formInput'/>
+       <input type='text' name="name" className='formInput' required/>
        </div>
        <label htmlFor="" className='formName'>אימייל</label>
        <div>
-       <input type='email' name="email" className='formInput' required ref={register({ required: true })} />
+       <input type='email' name="email" className='formInput' required  />
        </div>
        <label htmlFor="" className='formName'>נייד</label>
        <div>
-       <input type='tel' pattern="^\d{10}$" name="mobileNumber" className='formInput' required ref={register({ required: true })} />
+       <input type='tel' pattern="^\d{10}$" name="mobileNumber" className='formInput' required  />
        </div>
        <label htmlFor="" className='formName'>הערות</label>
        <div>
 
        <div>
-       <input type='hidden' name="RemedyName" defaultValue={props.RemedyName} className='formInput' ref={register} />
+       <input type='hidden' name="RemedyName" defaultValue={props.RemedyName} className='formInput' />
        </div>
        
-       <textarea  rows = "5" cols = "60"  name="message" className='formInputBig' ref={register} ></textarea>
+       <textarea  rows = "5" cols = "60"  name="message" className='formInputBig'  ></textarea>
        </div>
       
-        {errors.exampleRequired && <span>This field is required</span>}
+      
         <input type="submit" value='שליחה' className='inputOrderButton' />
         
       </form>
