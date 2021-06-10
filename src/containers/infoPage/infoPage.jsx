@@ -15,11 +15,12 @@ class InfoPage extends React.Component{
    
     let n = Cookies.getJSON('buttonId').id
     n=n-1
+    console.log(n)
     
     this.state = {
       videoId:InfoData[n].video,
       name:InfoData[n].name,
-      firstButtonState:'activebutton',
+      firstButtonState:'activebutton wide',
       multiInfo:InfoData[n].generalInfo,
       currentId:n
     }
@@ -35,53 +36,24 @@ class InfoPage extends React.Component{
   
   changeTabInfo=(x)=>{
     let n = this.state.currentId
-    
-      // switch(x){
-      //     case '1':
-      //     this.state.multiInfo === InfoData[n].firstAid ?
-      //     this.tabToggleHandler() : 
-      //     this.setState({multiInfo:InfoData[n].firstAid,firstButtonState:'infobutton' })
-      //     break;
-      //     case '2':
-      //     this.state.multiInfo === InfoData[n].nutrition ?
-      //     this.tabToggleHandler() :  
-      //     this.setState({multiInfo:InfoData[n].nutrition,firstButtonState:'infobutton'})
-      //     break;
-      //     case '3':
-      //     this.state.multiInfo === InfoData[n].grandma ?
-      //     this.tabToggleHandler() :  
-      //     this.setState({multiInfo:InfoData[n].grandma,firstButtonState:'infobutton'})
-      //     break;
-      //     case '4':
-      //     this.state.multiInfo === InfoData[n].homeopathy ?
-      //     this.tabToggleHandler() :
-      //     this.setState({multiInfo:InfoData[n].homeopathy,firstButtonState:'infobutton'})
-      //     break;
-      //     case '5':
-      //     this.state.multiInfo === InfoData[n].generalInfo ?
-      //     this.tabToggleHandler() :
-      //     this.setState({multiInfo:InfoData[n].generalInfo})
-      //     break;
-      //   default:
-      //     this.setState({multiInfo:InfoData[n].firstAid})
-      // }    
+      
     
       switch(x){
         case '1':
         if(this.state.multiInfo !== InfoData[n].firstAid) 
-        this.setState({multiInfo:InfoData[n].firstAid,firstButtonState:'infobutton' })
+        this.setState({multiInfo:InfoData[n].firstAid,firstButtonState:'infobutton wide' })
         break;
         case '2':
         if(this.state.multiInfo !== InfoData[n].nutrition) 
-        this.setState({multiInfo:InfoData[n].nutrition,firstButtonState:'infobutton'})
+        this.setState({multiInfo:InfoData[n].nutrition,firstButtonState:'infobutton wide'})
         break;
         case '3':
         if(this.state.multiInfo !== InfoData[n].grandma)
-        this.setState({multiInfo:InfoData[n].grandma,firstButtonState:'infobutton'})
+        this.setState({multiInfo:InfoData[n].grandma,firstButtonState:'infobutton wide'})
         break;
         case '4':
         if(this.state.multiInfo !== InfoData[n].homeopathy) 
-        this.setState({multiInfo:InfoData[n].homeopathy,firstButtonState:'infobutton'})
+        this.setState({multiInfo:InfoData[n].homeopathy,firstButtonState:'infobutton wide'})
         break;
         case '5':
         if(this.state.multiInfo !== InfoData[n].generalInfo)

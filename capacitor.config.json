@@ -1,0 +1,13 @@
+{
+    "appId": "com.homeohelp.app",
+    "appName": "homeo-help",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "build",
+    "plugins": {
+        "SplashScreen": {
+            "launchShowDuration": 2000
+        }
+    },
+    "cordova": {}
+}

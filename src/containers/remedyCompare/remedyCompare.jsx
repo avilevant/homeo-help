@@ -46,7 +46,7 @@ class RemedyCompare extends React.Component{
 
            
             remedyInfo.map((e) => (
-                <RemedyInfoDisplay  RemedyName={e.remedyName} 
+                <RemedyInfoDisplay  RemedyName={e.remedyName} key={e.id}
                 Remedy_information={this.getInfoBySelector(e, this.state.displayType)}/>)             
             )
 

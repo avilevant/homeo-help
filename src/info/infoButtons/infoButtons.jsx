@@ -42,19 +42,7 @@ return(
 <button className='infobutton' onClick={()=>tabClicked('4')}>
 <img src={imgD} alt='img' className='infoImg'/>
 טיפול הומאופתי
-</button>
-
-
-
-
-
-
-
-
-
-
-
-    
-    </div>)
+</button>   
+</div>)
 }
  export default InfoButton;

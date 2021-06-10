@@ -1,5 +1,4 @@
 import kitImg1 from '../../images/Background copy.png';
-import kitImg2 from '../../images/Background copy1.png';
 
 
 const KitData={
@@ -10,7 +9,6 @@ const KitData={
     <div>
     <img src={kitImg1} alt='kitImg' className='kitImg'/>
     </div>
-    <img src={kitImg2} alt='kitImg' className='kitImg1'/>
     </div>
     ,
     content_info:

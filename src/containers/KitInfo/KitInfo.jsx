@@ -44,8 +44,6 @@ class KitInfo extends React.Component{
     orderInput=()=>{
         Cookies.set('RemedyName','ערכת עזרה ראשונה')
         Cookies.set('price','320')
-        console.log('hello')
-
     }
 
     render(){

@@ -68,7 +68,6 @@
         font-size: 14px;
     }
     .infobutton:hover,
-    .infobutton:active,
     .activebutton {
         border: none;
         display: flex;
@@ -85,5 +84,34 @@
         z-index: 40;
         position: relative;
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media(min-width:500px) {
+    .infoButtons {
+        margin: 5px 0px;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        /* height: 80px; */
+        height: 100%;
+        z-index: 100;
+    }
+    .infobutton {
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+        margin: 3px 3px;
+    }
+    .infobutton:hover,
+    .activebutton {
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+    .infobutton:active {
+        background-color: aqua;
+    }
+    .wide {
+        grid-column: 1/3;
     }
 }

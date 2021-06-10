@@ -32,7 +32,7 @@
     color: white;
     background-color: #87D654;
     font-size: 20px;
-    /* font-weight: bold; */
+    font-family: 'Assistant', sans-serif;
     outline: none;
 }
 
@@ -47,6 +47,5 @@
         color: white;
         background-color: #87D654;
         font-size: 18px;
-        /* font-weight: bold; */
     }
 }

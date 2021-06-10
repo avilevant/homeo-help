@@ -16,24 +16,6 @@ const Video = (props)=>{
     </div>)
 }
 
-// const Video = (props)=>(
-//     <div className='video'>
-    
-//     <ReactPlayer
-//     url={'https://youtu.be/HLAZoRTAmIM'}
-//     width='100%'
-//     height='120%'
-//     // light='true'
-//     showinfo='0'
-//     config={{
-//       youtube: {
-//         playerVars: { showinfo: 0,
-//         light:true }
-//       }
-      
-//     }}
-//   />
-//     </div>
-// )   
+   
 
 export default Video;

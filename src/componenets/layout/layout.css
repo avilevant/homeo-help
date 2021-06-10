@@ -10,6 +10,11 @@ body {
 
 .content {
     padding-top: 50px;
-    /* background-color: #F0F4FF; */
-    /* height: 87vh; */
+}
+
+@media(min-width: 500px) {
+    .content {
+        padding-top: 8vh;
+        height: 100vh;
+    }
 }
