@@ -8,6 +8,7 @@ import OrderForm from '../../componenets/orderForm/orderForm';
 
 
 const Contact =(props)=>(
+    <div className='contact'>   
     <div className='pageBuild'>
     <div className='contactStatement'>
     
@@ -19,6 +20,7 @@ const Contact =(props)=>(
     <OrderForm confirmation='contact'/>
     </div>
     <SmallButton buttonName={'חזרה'} route={()=>{props.history.goBack()}}/>
+    </div>
     </div>
 )
 

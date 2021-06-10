@@ -5,7 +5,7 @@ import { BigButtonBlue } from '../../componenets/buttons/buttons';
 import { withRouter } from 'react-router-dom';
 
 const UseApp =(props)=>(
-<div>
+<div className='useAppVideoBuild'>
 <div className='useAppVideo'>
 <h1 className='useApp'>סרטון הסבר כיצד להתקין אפליקציה במכשיר אנדרואיד</h1>
 <Video videoId={'kUsqZ9NYB2Y'} />

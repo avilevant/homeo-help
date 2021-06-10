@@ -1,3 +1,9 @@
+@media(min-width: 500px) {
+    .contact {
+        padding: 5vh 20vw;
+    }
+}
+
 .conatcForm {
     /* display: flex;
     flex-flow: column; */

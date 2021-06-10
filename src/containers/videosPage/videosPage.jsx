@@ -5,7 +5,7 @@ import {BigButtonBlue} from '../../componenets/buttons/buttons';
 import {withRouter} from 'react-router-dom';
 
 const VideoLibrary = (props) =>(
-    <div>
+    <div className='VideoBuild'>
     <h1 className='videoPageHeader'>ספריית וידאו</h1>
     <div className='videoLib'>
     <Video videoId={'XsnABbOCjtQ'}/>

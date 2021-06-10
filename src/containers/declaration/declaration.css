@@ -28,3 +28,9 @@
     display: block;
     margin: 50px auto;
 }
+
+@media(min-width: 500px) {
+    .declaration {
+        padding: 5vh 20vw;
+    }
+}

@@ -9,7 +9,7 @@ import {withRouter } from 'react-router-dom';
 
 
 const About =(props)=>(
-    <div>
+    <div className='about'>
     <div className='contactHeader'>
     <img src={logoImg} alt="logoImg" className='logoImgAbout'/>
     <img src={PersonalImg} alt="PersonalImg" className='PersonalImg'/>

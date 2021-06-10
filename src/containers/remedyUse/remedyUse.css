@@ -13,3 +13,9 @@
     padding-bottom: 80px;
     color: black;
 }
+
+@media(min-width:500px) {
+    .remedyUse {
+        padding: 5vh 20vw;
+    }
+}

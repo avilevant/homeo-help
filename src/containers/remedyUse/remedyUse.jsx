@@ -7,7 +7,7 @@ import {withRouter } from 'react-router-dom';
 
 
 const RemedyUse =(props)=>(
-    <div >
+    <div className='remedyUse'>
     <Video videoId={'BKPkAKqDhc8'}/>
     <h1 className='remedyUserHeader'>
     דגשים חשובים לשימוש בתרופות הומאופתיות    </h1>

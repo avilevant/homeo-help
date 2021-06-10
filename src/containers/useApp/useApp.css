@@ -1,6 +1,5 @@
 .useApp {
     margin-top: 50px;
-    /* text-align: right; */
 }
 
 
@@ -20,4 +19,10 @@
 
 .useAppTextSmall {
     color: black;
+}
+
+@media(min-width:500px) {
+    .useAppVideoBuild {
+        padding: 10vh 20vw;
+    }
 }

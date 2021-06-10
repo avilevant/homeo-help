@@ -1,3 +1,9 @@
+@media(min-width:500px) {
+    .VideoBuild {
+        padding: 5vh 20vw;
+    }
+}
+
 .videoLib {
     margin-bottom: 30px;
 }
